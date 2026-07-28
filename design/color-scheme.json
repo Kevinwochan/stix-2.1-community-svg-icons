@@ -1,0 +1,115 @@
+{
+  "name": "STIX Icon Color Profiles",
+  "version": "2.0.0",
+  "purpose": "Portable monochrome defaults plus an optional type-level palette compatible with the visual language used by the OASIS STIX visualizer.",
+  "accessibility": {
+    "minimum_contrast_ratio": 4.5,
+    "color_is_never_the_only_signal": true,
+    "state_colors_do_not_replace_type_colors": true
+  },
+  "themes": {
+    "light": {
+      "canvas": "#EEF2F6",
+      "card": "#FFFFFF",
+      "text": "#152033",
+      "muted_text": "#526078"
+    },
+    "dark": {
+      "canvas": "#0B1220",
+      "card": "#151E2E",
+      "text": "#F1F5F9",
+      "muted_text": "#A8B3C5"
+    }
+  },
+  "profiles": {
+    "monochrome": {
+      "label": "Monochrome",
+      "description": "The portable default. Icons inherit a single neutral foreground through currentColor.",
+      "light": "#334155",
+      "dark": "#CBD5E1"
+    },
+    "oasis_visualizer_compatible": {
+      "label": "OASIS visualizer-compatible",
+      "description": "A non-normative compatibility theme preserving the recognizable type hues used by the OASIS CTI STIX visualizer and Bret Jordan icon assets. Exact values are adapted for contrast and flat currentColor rendering.",
+      "source": {
+        "visualizer": "https://github.com/oasis-open/cti-stix-visualization",
+        "documentation": "https://oasis-open.github.io/cti-documentation/stix/intro.html",
+        "normative": false
+      },
+      "tokens": {
+        "charcoal": { "light": "#374151", "dark": "#CBD5E1" },
+        "sky": { "light": "#0069B8", "dark": "#72BCFF" },
+        "network-blue": { "light": "#1664AD", "dark": "#83BAF4" },
+        "bundle-brown": { "light": "#76502C", "dark": "#D6B28C" },
+        "navy": { "light": "#245B86", "dark": "#8BC0E8" },
+        "action-green": { "light": "#08783F", "dark": "#67D99B" },
+        "teal": { "light": "#08736D", "dark": "#73D5CC" },
+        "taupe": { "light": "#6B5E51", "dark": "#CBBEB1" },
+        "incident-orange": { "light": "#A94B00", "dark": "#FFAD6B" },
+        "royal-blue": { "light": "#2949B8", "dark": "#9BB0FF" },
+        "neutral-gray": { "light": "#5B616B", "dark": "#BDC4CE" },
+        "location-blue": { "light": "#005A92", "dark": "#82C4EE" },
+        "malware-red": { "light": "#C52A1A", "dark": "#FF8A7D" },
+        "meta-brown": { "light": "#71502F", "dark": "#D0AF8D" },
+        "note-green": { "light": "#377514", "dark": "#9DDA78" },
+        "observed-blue": { "light": "#3566A8", "dark": "#98BEF5" },
+        "opinion-cyan": { "light": "#087783", "dark": "#72D1DC" },
+        "report-slate": { "light": "#5E6078", "dark": "#C2C4DB" },
+        "sighting-purple": { "light": "#7046A8", "dark": "#C7A6F4" },
+        "email-purple": { "light": "#7046A8", "dark": "#C7A6F4" },
+        "threat-red": { "light": "#C62D1D", "dark": "#FF8D80" },
+        "tool-maroon": { "light": "#851B12", "dark": "#F39A8F" },
+        "vulnerability-olive": { "light": "#68691E", "dark": "#C7C96C" },
+        "extension-purple": { "light": "#67459A", "dark": "#BEA1E8" }
+      },
+      "types": {
+        "attack-pattern": "sky",
+        "campaign": "navy",
+        "course-of-action": "action-green",
+        "grouping": "teal",
+        "identity": "taupe",
+        "incident": "incident-orange",
+        "indicator": "royal-blue",
+        "infrastructure": "neutral-gray",
+        "intrusion-set": "navy",
+        "location": "location-blue",
+        "malware": "malware-red",
+        "malware-analysis": "malware-red",
+        "note": "note-green",
+        "observed-data": "observed-blue",
+        "opinion": "opinion-cyan",
+        "report": "report-slate",
+        "threat-actor": "threat-red",
+        "tool": "tool-maroon",
+        "vulnerability": "vulnerability-olive",
+        "artifact": "charcoal",
+        "autonomous-system": "network-blue",
+        "directory": "charcoal",
+        "domain-name": "network-blue",
+        "email-addr": "email-purple",
+        "email-message": "email-purple",
+        "file": "charcoal",
+        "ipv4-addr": "network-blue",
+        "ipv6-addr": "network-blue",
+        "mac-addr": "network-blue",
+        "mutex": "charcoal",
+        "network-traffic": "network-blue",
+        "process": "charcoal",
+        "software": "charcoal",
+        "url": "charcoal",
+        "user-account": "neutral-gray",
+        "windows-registry-key": "charcoal",
+        "x509-certificate": "charcoal",
+        "relationship": "action-green",
+        "sighting": "sighting-purple",
+        "extension-definition": "extension-purple",
+        "language-content": "meta-brown",
+        "marking-definition": "neutral-gray",
+        "bundle": "bundle-brown"
+      }
+    }
+  },
+  "state_colors": {
+    "application_rule": "Apply warning, error, selected, muted, revoked, and confidence treatments to a surrounding badge, outline, or state indicator; never replace the icon's type color."
+  }
+}

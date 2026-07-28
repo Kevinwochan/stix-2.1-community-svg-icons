@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STIX 2.1 Community SVG Icons</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      background: #eef2f6;
+      color: #152033;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 40px 24px 64px; }
+    main { width: min(1080px, 100%); margin: 0 auto; }
+    h1 { margin: 0; font-size: clamp(1.75rem, 4vw, 3rem); letter-spacing: -.04em; }
+    h2.section-title { margin: 48px 0 8px; font-size: 1.45rem; }
+    .intro { max-width: 720px; margin: 12px 0 32px; color: #526078; line-height: 1.6; }
+    .jump-links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
+    .jump-links a {
+      color: #2345a5;
+      background: #fff;
+      border: 1px solid #d9e0e9;
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: .85rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      --accent: #3659c9;
+      background: #fff;
+      border: 1px solid #d9e0e9;
+      border-top: 4px solid var(--accent);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgb(39 54 78 / 8%);
+    }
+    .sco { --accent: #087f5b; }
+    .sro { --accent: #a64b00; }
+    .smo { --accent: #7446a3; }
+    .family {
+      display: inline-block;
+      color: var(--accent);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+    }
+    .hero {
+      display: grid;
+      place-items: center;
+      height: 150px;
+      margin: 14px 0 20px;
+      color: var(--accent);
+      background: color-mix(in srgb, var(--accent) 9%, white);
+      border-radius: 12px;
+    }
+    .hero img { width: 96px; height: 96px; }
+    h2 { margin: 0; font-size: 1.05rem; }
+    code { font-size: .8rem; color: #67738a; }
+    .sizes {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-height: 56px;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid #e4e8ef;
+    }
+    .sizes img:nth-child(1) { width: 24px; height: 24px; }
+    .sizes img:nth-child(2) { width: 32px; height: 32px; }
+    .sizes img:nth-child(3) { width: 48px; height: 48px; }
+    .dark-test {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 20px;
+      padding: 20px 24px;
+      color: white;
+      background: #111827;
+      border-radius: 16px;
+    }
+    .dark-test img { width: 32px; height: 32px; filter: invert(1); }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .sheet {
+      overflow: hidden;
+      color: #152033;
+      background: #fff;
+      border: 1px solid #d9e0e9;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgb(39 54 78 / 8%);
+    }
+    .sheet img { display: block; width: 100%; height: auto; background: #eef2f6; }
+    .sheet div { padding: 18px 20px 20px; }
+    .sheet h3 { margin: 0 0 6px; }
+    .sheet p { margin: 0; color: #526078; line-height: 1.5; }
+    .tlp-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .tlp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: white;
+      background: #000;
+      border: 1px solid #394150;
+      border-radius: 9px;
+      padding: 8px 12px;
+      font-weight: 800;
+      letter-spacing: .02em;
+    }
+    .tlp-badge img { width: 30px; height: 30px; }
+    .note {
+      margin-top: 14px;
+      color: #526078;
+      font-size: .9rem;
+      line-height: 1.55;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { background: #0b1220; color: #edf2f7; }
+      .intro { color: #a8b3c5; }
+      .card { background: #151e2e; border-color: #2a3547; }
+      .hero { background: #0d1625; }
+      code { color: #a8b3c5; }
+      .sizes { border-color: #2a3547; }
+      .card img { filter: invert(1); }
+      .jump-links a { color: #bdd0ff; background: #151e2e; border-color: #2a3547; }
+      .note { color: #a8b3c5; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>STIX 2.1 community SVG icons</h1>
+    <p class="intro">
+      Complete coverage for 43 canonical entity types, plus semantic markings,
+      predefined extension badges, candidate-extension objects, state
+      indicators, fallbacks, and compatibility assets.
+    </p>
+    <nav class="jump-links" aria-label="Preview sections">
+      <a href="#semantic-support">Semantic support</a>
+      <a href="#resolver">Resolver composition</a>
+      <a href="#small-sizes">Small sizes</a>
+      <a href="#pilots">Family pilots</a>
+    </nav>
+
+    <h2 class="section-title" id="semantic-support">Semantic support</h2>
+    <p class="intro">
+      Marking meaning is resolved from IDs and definition content. TLP uses a
+      fixed-color glyph plus a complete visible label so color is not the only
+      cue.
+    </p>
+    <div class="tlp-row" aria-label="Traffic Light Protocol badge examples">
+      <span class="tlp-badge"><img src="../icons/marking/tlp-clear.svg" alt="">TLP:CLEAR</span>
+      <span class="tlp-badge"><img src="../icons/marking/tlp-green.svg" alt="">TLP:GREEN</span>
+      <span class="tlp-badge"><img src="../icons/marking/tlp-amber.svg" alt="">TLP:AMBER</span>
+      <span class="tlp-badge"><img src="../icons/marking/tlp-amber-strict.svg" alt="">TLP:AMBER+STRICT</span>
+      <span class="tlp-badge"><img src="../icons/marking/tlp-red.svg" alt="">TLP:RED</span>
+      <span class="tlp-badge"><img src="../icons/marking/tlp-white.svg" alt="">TLP:WHITE (STIX 2.1)</span>
+    </div>
+    <p class="note">
+      TLP:WHITE is retained for STIX 2.1 serialization compatibility; current
+      FIRST TLP 2.0 uses TLP:CLEAR.
+    </p>
+
+    <section class="preview-grid">
+      <article class="sheet">
+        <a href="support-catalog.svg">
+          <img src="support-catalog.svg"
+               alt="Catalog of 39 semantic support assets">
+        </a>
+        <div>
+          <h3>Support asset catalog</h3>
+          <p>Markings, extensions, states, fallbacks, and legacy mappings.</p>
+        </div>
+      </article>
+      <article class="sheet" id="resolver">
+        <a href="resolver-composition.svg">
+          <img src="resolver-composition.svg"
+               alt="Examples of base STIX icons composed with semantic badges">
+        </a>
+        <div>
+          <h3>Resolver composition</h3>
+          <p>Base object identity remains visible when badges are applied.</p>
+        </div>
+      </article>
+      <article class="sheet" id="small-sizes">
+        <a href="catalog-small.svg">
+          <img src="catalog-small.svg"
+               alt="All 43 canonical STIX icons at 24 and 32 pixels">
+        </a>
+        <div>
+          <h3>Small-size legibility</h3>
+          <p>All canonical entity icons rendered at 24 and 32 CSS pixels.</p>
+        </div>
+      </article>
+      <article class="sheet">
+        <a href="color-scheme.svg">
+          <img src="color-scheme.svg"
+               alt="STIX compatibility colors on light and dark themes">
+        </a>
+        <div>
+          <h3>Compatibility colors</h3>
+          <p>Optional non-normative type colors; monochrome remains default.</p>
+        </div>
+      </article>
+    </section>
+
+    <h2 class="section-title" id="pilots">Family pilots</h2>
+    <p class="intro">
+      Four representative monochrome SVGs test the principal object families
+      at 24, 32, 48, and 96 pixels.
+    </p>
+    <section class="grid">
+      <article class="card sdo">
+        <span class="family">SDO</span>
+        <div class="hero"><img src="../icons/sdo/attack-pattern.svg" alt=""></div>
+        <h2>Attack Pattern</h2>
+        <code>attack-pattern</code>
+        <div class="sizes">
+          <img src="../icons/sdo/attack-pattern.svg" alt="Attack Pattern at 24 pixels">
+          <img src="../icons/sdo/attack-pattern.svg" alt="Attack Pattern at 32 pixels">
+          <img src="../icons/sdo/attack-pattern.svg" alt="Attack Pattern at 48 pixels">
+        </div>
+      </article>
+      <article class="card sco">
+        <span class="family">SCO</span>
+        <div class="hero"><img src="../icons/sco/file.svg" alt=""></div>
+        <h2>File</h2>
+        <code>file</code>
+        <div class="sizes">
+          <img src="../icons/sco/file.svg" alt="File at 24 pixels">
+          <img src="../icons/sco/file.svg" alt="File at 32 pixels">
+          <img src="../icons/sco/file.svg" alt="File at 48 pixels">
+        </div>
+      </article>
+      <article class="card sro">
+        <span class="family">SRO</span>
+        <div class="hero"><img src="../icons/sro/relationship.svg" alt=""></div>
+        <h2>Relationship</h2>
+        <code>relationship</code>
+        <div class="sizes">
+          <img src="../icons/sro/relationship.svg" alt="Relationship at 24 pixels">
+          <img src="../icons/sro/relationship.svg" alt="Relationship at 32 pixels">
+          <img src="../icons/sro/relationship.svg" alt="Relationship at 48 pixels">
+        </div>
+      </article>
+      <article class="card smo">
+        <span class="family">SMO</span>
+        <div class="hero"><img src="../icons/smo/marking-definition.svg" alt=""></div>
+        <h2>Marking Definition</h2>
+        <code>marking-definition</code>
+        <div class="sizes">
+          <img src="../icons/smo/marking-definition.svg" alt="Marking Definition at 24 pixels">
+          <img src="../icons/smo/marking-definition.svg" alt="Marking Definition at 32 pixels">
+          <img src="../icons/smo/marking-definition.svg" alt="Marking Definition at 48 pixels">
+        </div>
+      </article>
+    </section>
+    <section class="dark-test" aria-label="Dark background test">
+      <strong>Dark background</strong>
+      <img src="../icons/sdo/attack-pattern.svg" alt="Attack Pattern">
+      <img src="../icons/sco/file.svg" alt="File">
+      <img src="../icons/sro/relationship.svg" alt="Relationship">
+      <img src="../icons/smo/marking-definition.svg" alt="Marking Definition">
+    </section>
+  </main>
+</body>
+</html>

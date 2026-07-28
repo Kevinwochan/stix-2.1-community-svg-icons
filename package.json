@@ -1,0 +1,13 @@
+{
+  "name": "stix-2.1-community-svg-icons",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dependency-free STIX 2.1 SVG entity icons and semantic support assets.",
+  "type": "module",
+  "scripts": {
+    "generate": "node tools/generate-support-icons.mjs && node tools/generate-catalog.mjs",
+    "generate:freetaxii": "node tools/generate-freetaxii-pngs.mjs",
+    "test": "node tools/validate-icons.mjs && node --test tools/resolve-icon.test.mjs && node tools/validate-local-links.mjs"
+  },
+  "license": "BSD-3-Clause"
+}

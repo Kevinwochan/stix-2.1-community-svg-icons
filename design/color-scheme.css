@@ -1,0 +1,149 @@
+:root {
+  --stix-canvas: #eef2f6;
+  --stix-card: #ffffff;
+  --stix-text: #152033;
+  --stix-muted-text: #526078;
+  --stix-monochrome: #334155;
+
+  --stix-charcoal: #374151;
+  --stix-sky: #0069b8;
+  --stix-network-blue: #1664ad;
+  --stix-bundle-brown: #76502c;
+  --stix-navy: #245b86;
+  --stix-action-green: #08783f;
+  --stix-teal: #08736d;
+  --stix-taupe: #6b5e51;
+  --stix-incident-orange: #a94b00;
+  --stix-royal-blue: #2949b8;
+  --stix-neutral-gray: #5b616b;
+  --stix-location-blue: #005a92;
+  --stix-malware-red: #c52a1a;
+  --stix-meta-brown: #71502f;
+  --stix-note-green: #377514;
+  --stix-observed-blue: #3566a8;
+  --stix-opinion-cyan: #087783;
+  --stix-report-slate: #5e6078;
+  --stix-sighting-purple: #7046a8;
+  --stix-email-purple: #7046a8;
+  --stix-threat-red: #c62d1d;
+  --stix-tool-maroon: #851b12;
+  --stix-vulnerability-olive: #68691e;
+  --stix-extension-purple: #67459a;
+}
+
+[data-theme="dark"] {
+  --stix-canvas: #0b1220;
+  --stix-card: #151e2e;
+  --stix-text: #f1f5f9;
+  --stix-muted-text: #a8b3c5;
+  --stix-monochrome: #cbd5e1;
+
+  --stix-charcoal: #cbd5e1;
+  --stix-sky: #72bcff;
+  --stix-network-blue: #83baf4;
+  --stix-bundle-brown: #d6b28c;
+  --stix-navy: #8bc0e8;
+  --stix-action-green: #67d99b;
+  --stix-teal: #73d5cc;
+  --stix-taupe: #cbbeb1;
+  --stix-incident-orange: #ffad6b;
+  --stix-royal-blue: #9bb0ff;
+  --stix-neutral-gray: #bdc4ce;
+  --stix-location-blue: #82c4ee;
+  --stix-malware-red: #ff8a7d;
+  --stix-meta-brown: #d0af8d;
+  --stix-note-green: #9dda78;
+  --stix-observed-blue: #98bef5;
+  --stix-opinion-cyan: #72d1dc;
+  --stix-report-slate: #c2c4db;
+  --stix-sighting-purple: #c7a6f4;
+  --stix-email-purple: #c7a6f4;
+  --stix-threat-red: #ff8d80;
+  --stix-tool-maroon: #f39a8f;
+  --stix-vulnerability-olive: #c7c96c;
+  --stix-extension-purple: #bea1e8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --stix-canvas: #0b1220;
+    --stix-card: #151e2e;
+    --stix-text: #f1f5f9;
+    --stix-muted-text: #a8b3c5;
+    --stix-monochrome: #cbd5e1;
+
+    --stix-charcoal: #cbd5e1;
+    --stix-sky: #72bcff;
+    --stix-network-blue: #83baf4;
+    --stix-bundle-brown: #d6b28c;
+    --stix-navy: #8bc0e8;
+    --stix-action-green: #67d99b;
+    --stix-teal: #73d5cc;
+    --stix-taupe: #cbbeb1;
+    --stix-incident-orange: #ffad6b;
+    --stix-royal-blue: #9bb0ff;
+    --stix-neutral-gray: #bdc4ce;
+    --stix-location-blue: #82c4ee;
+    --stix-malware-red: #ff8a7d;
+    --stix-meta-brown: #d0af8d;
+    --stix-note-green: #9dda78;
+    --stix-observed-blue: #98bef5;
+    --stix-opinion-cyan: #72d1dc;
+    --stix-report-slate: #c2c4db;
+    --stix-sighting-purple: #c7a6f4;
+    --stix-email-purple: #c7a6f4;
+    --stix-threat-red: #ff8d80;
+    --stix-tool-maroon: #f39a8f;
+    --stix-vulnerability-olive: #c7c96c;
+    --stix-extension-purple: #bea1e8;
+  }
+}
+
+.stix-icon {
+  color: var(--stix-monochrome);
+}
+
+[data-stix-color-profile="oasis-compatible"] .stix-icon:is(
+  [data-stix-type="artifact"],
+  [data-stix-type="directory"],
+  [data-stix-type="file"],
+  [data-stix-type="mutex"],
+  [data-stix-type="process"],
+  [data-stix-type="software"],
+  [data-stix-type="url"],
+  [data-stix-type="windows-registry-key"],
+  [data-stix-type="x509-certificate"]
+) { color: var(--stix-charcoal); }
+
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="attack-pattern"] { color: var(--stix-sky); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon:is([data-stix-type="autonomous-system"], [data-stix-type="domain-name"], [data-stix-type="ipv4-addr"], [data-stix-type="ipv6-addr"], [data-stix-type="mac-addr"], [data-stix-type="network-traffic"]) { color: var(--stix-network-blue); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="bundle"] { color: var(--stix-bundle-brown); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon:is([data-stix-type="campaign"], [data-stix-type="intrusion-set"]) { color: var(--stix-navy); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon:is([data-stix-type="course-of-action"], [data-stix-type="relationship"]) { color: var(--stix-action-green); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="grouping"] { color: var(--stix-teal); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="identity"] { color: var(--stix-taupe); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="incident"] { color: var(--stix-incident-orange); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="indicator"] { color: var(--stix-royal-blue); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon:is([data-stix-type="infrastructure"], [data-stix-type="user-account"], [data-stix-type="marking-definition"]) { color: var(--stix-neutral-gray); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="location"] { color: var(--stix-location-blue); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon:is([data-stix-type="malware"], [data-stix-type="malware-analysis"]) { color: var(--stix-malware-red); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="language-content"] { color: var(--stix-meta-brown); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="note"] { color: var(--stix-note-green); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="observed-data"] { color: var(--stix-observed-blue); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="opinion"] { color: var(--stix-opinion-cyan); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="report"] { color: var(--stix-report-slate); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="sighting"] { color: var(--stix-sighting-purple); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon:is([data-stix-type="email-addr"], [data-stix-type="email-message"]) { color: var(--stix-email-purple); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="threat-actor"] { color: var(--stix-threat-red); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="tool"] { color: var(--stix-tool-maroon); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="vulnerability"] { color: var(--stix-vulnerability-olive); }
+[data-stix-color-profile="oasis-compatible"] .stix-icon[data-stix-type="extension-definition"] { color: var(--stix-extension-purple); }
+
+.stix-icon-mask {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: currentColor;
+  -webkit-mask: var(--stix-icon-url) center / contain no-repeat;
+  mask: var(--stix-icon-url) center / contain no-repeat;
+}

@@ -1,0 +1,934 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1446 1458"
+     role="img"
+     aria-label="STIX marking, extension, state, fallback, and compatibility assets">
+  <title>STIX semantic support asset catalog</title>
+  <defs>
+    <symbol id="support-0" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18h25l21 14-21 14H9z"/>
+  <circle cx="19" cy="32" r="4"/>
+  <path d="M29 27h13M29 33h10M29 39h6"/>
+    </symbol>
+    <symbol id="support-1" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="12" width="52" height="40" rx="6" fill="#000000" stroke="#FFFFFF"/>
+  <g stroke="#FFFFFF"><path d="M19 22 23 42 28 29 32 42 37 29 41 42 45 22"/></g>
+    </symbol>
+    <symbol id="support-2" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="12" width="52" height="40" rx="6" fill="#000000" stroke="#33FF00"/>
+  <g stroke="#33FF00"><path d="M43 25a13 13 0 1 0 0 14v-8H33"/></g>
+    </symbol>
+    <symbol id="support-3" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="12" width="52" height="40" rx="6" fill="#000000" stroke="#FFC000"/>
+  <g stroke="#FFC000"><path d="m20 43 12-24 12 24M25 34h14"/></g>
+    </symbol>
+    <symbol id="support-4" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="12" width="52" height="40" rx="6" fill="#000000" stroke="#FF2B2B"/>
+  <g stroke="#FF2B2B"><path d="M22 44V20h10a8 8 0 0 1 0 16H22M34 36l9 8"/></g>
+    </symbol>
+    <symbol id="support-5" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="12" width="52" height="40" rx="6" fill="#000000" stroke="#FFFFFF"/>
+  <g stroke="#FFFFFF"><path d="M43 25a13 13 0 1 0 0 14"/></g>
+    </symbol>
+    <symbol id="support-6" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="12" width="52" height="40" rx="6" fill="#000000" stroke="#FFC000"/>
+  <g stroke="#FFC000"><path d="m14 43 10-22 10 22M18 35h12M50 25c-2-4-14-4-14 2 0 7 14 3 14 11 0 6-12 7-15 1"/></g>
+    </symbol>
+    <symbol id="support-7" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="10" y="14" width="44" height="11" rx="3"/>
+  <path d="M14 25v25h36V25M25 34h14M27 42h10"/>
+    </symbol>
+    <symbol id="support-8" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 10h25l11 11v33H14zM39 10v12h11"/>
+  <circle cx="25" cy="33" r="3"/><circle cx="39" cy="42" r="3"/>
+  <path d="M28 33h5c3 0 6 3 6 6"/>
+    </symbol>
+    <symbol id="support-9" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 9h23l11 11v35H15zM38 9v12h11"/>
+  <path d="M22 42c8-3 14-9 17-17-2 10-1 17 5 22-8-6-15-7-22-5z"/>
+    </symbol>
+    <symbol id="support-10" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="13" width="46" height="38" rx="4"/>
+  <circle cx="22" cy="25" r="4"/>
+  <path d="m13 45 12-12 8 8 7-7 11 11"/>
+    </symbol>
+    <symbol id="support-11" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 11h20v20H10zM34 11h20v20H34zM10 35h20v18H10zM34 35h20v18H34z"/>
+  <circle cx="20" cy="21" r="2" fill="currentColor" stroke="none"/>
+  <circle cx="44" cy="21" r="2" fill="currentColor" stroke="none"/>
+  <path d="M16 44h8M40 44h8"/>
+    </symbol>
+    <symbol id="support-12" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="30" cy="32" r="20"/>
+  <path d="M10 32h40M30 12c7 7 9 31 0 40M30 12c-7 7-9 31 0 40"/>
+  <path d="M42 20h12v12M54 20 41 33"/>
+    </symbol>
+    <symbol id="support-13" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 33h10l5-12 8 24 7-17 5 5h15"/>
+  <path d="M13 17a25 25 0 0 1 38 0M13 49a25 25 0 0 0 38 0"/>
+    </symbol>
+    <symbol id="support-14" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 10v15M43 10v15M16 25h32v7a16 16 0 0 1-32 0zM32 48v7"/>
+  <circle cx="26" cy="33" r="2" fill="currentColor" stroke="none"/>
+  <circle cx="38" cy="33" r="2" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="support-15" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 21h37M39 14l7 7-7 7M55 43H18M25 36l-7 7 7 7"/>
+  <path d="M14 12v40M50 12v40"/>
+    </symbol>
+    <symbol id="support-16" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="10" width="48" height="42" rx="3"/>
+  <path d="M8 21h48M17 15h1M24 15h1"/>
+  <circle cx="33" cy="36" r="8"/>
+  <path d="M33 25v3M33 44v3M22 36h3M41 36h3M25 28l2 2M39 42l2 2M41 28l-2 2M27 42l-2 2"/>
+    </symbol>
+    <symbol id="support-17" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="10" width="48" height="42" rx="3"/>
+  <path d="M8 21h48M17 15h1M24 15h1"/>
+  <path d="m24 43 15-15M22 30a8 8 0 0 0 10 10M42 41a8 8 0 0 0-10-10"/>
+  <circle cx="23" cy="29" r="2"/><circle cx="41" cy="42" r="2"/>
+    </symbol>
+    <symbol id="support-18" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="11" width="48" height="42" rx="4"/>
+  <path d="M8 21h48M16 30l7 6-7 6M29 43h12"/>
+  <circle cx="16" cy="16" r="1" fill="currentColor" stroke="none"/>
+  <circle cx="22" cy="16" r="1" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="support-19" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="14" width="46" height="40" rx="4"/>
+  <path d="M9 25h46M20 9v10M44 9v10"/>
+  <path d="m32 31 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/>
+    </symbol>
+    <symbol id="support-20" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="m32 7 5 14 13-6-6 13 14 4-14 5 6 12-13-6-5 14-5-14-13 6 6-12-14-5 14-4-6-13 13 6z"/>
+  <circle cx="32" cy="32" r="6"/>
+    </symbol>
+    <symbol id="support-21" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="10" y="9" width="44" height="46" rx="4"/>
+  <path d="M19 21h4M31 21h15M19 32h4M31 32h15M19 43h4M31 43h15"/>
+  <path d="m17 31 4 4 7-8"/>
+    </symbol>
+    <symbol id="support-22" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 31s9-15 26-15 26 15 26 15-9 15-26 15S6 31 6 31z"/>
+  <circle cx="32" cy="31" r="7"/>
+  <path d="M18 52h28"/>
+    </symbol>
+    <symbol id="support-23" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 29h36v26H14zM21 29v-8a11 11 0 0 1 22 0v8"/>
+  <circle cx="32" cy="40" r="4"/><path d="M32 44v5"/>
+    </symbol>
+    <symbol id="support-24" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="19" r="7"/><circle cx="16" cy="40" r="7"/><circle cx="48" cy="40" r="7"/>
+  <path d="M26 23 21 34M38 23l5 11M23 40h18"/>
+  <path d="M10 54c1-5 3-7 6-7s5 2 6 7M42 54c1-5 3-7 6-7s5 2 6 7"/>
+    </symbol>
+    <symbol id="support-25" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 32h13l6-8 10 16 6-8h13"/>
+  <path d="M13 20a22 22 0 0 1 38 0M13 44a22 22 0 0 0 38 0"/>
+  <circle cx="8" cy="32" r="3"/><circle cx="56" cy="32" r="3"/>
+    </symbol>
+    <symbol id="support-26" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 11h34v18c0 14-7 22-17 27-10-5-17-13-17-27z"/>
+  <path d="m23 25 5 12 4-8 4 8 5-12M11 53 53 11"/>
+    </symbol>
+    <symbol id="support-27" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="23"/><path d="m16 48 32-32"/>
+    </symbol>
+    <symbol id="support-28" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 9h46v46H9zM24 9v46M40 9v46M9 24h46M9 40h46"/>
+  <circle cx="32" cy="32" r="7"/><circle cx="32" cy="32" r="2" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="support-29" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 12h36v29H25L14 51V41H8z"/>
+  <circle cx="26" cy="26" r="9"/>
+  <path d="M17 26h18M26 17c3 3 4 15 0 18M26 17c-3 3-4 15 0 18M46 31h10v21H39v-6"/>
+    </symbol>
+    <symbol id="support-30" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="23"/>
+  <path d="M25 25a8 8 0 1 1 10 8c-3 1-3 3-3 5M32 46h.1"/>
+    </symbol>
+    <symbol id="support-31" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="9" width="46" height="46" rx="5"/>
+  <path d="M25 25a8 8 0 1 1 10 8c-3 1-3 3-3 5M32 46h.1"/>
+    </symbol>
+    <symbol id="support-32" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="m32 6 26 26-26 26L6 32z"/>
+  <path d="M18 32h28M39 25l7 7-7 7"/>
+    </symbol>
+    <symbol id="support-33" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 18h27l21 14-21 14H8z"/>
+  <circle cx="19" cy="32" r="4"/>
+  <path d="M31 27a6 6 0 1 1 5 9c-2 1-2 2-2 4M34 44h.1"/>
+    </symbol>
+    <symbol id="support-34" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 6 54 19v26L32 58 10 45V19z"/>
+  <path d="M25 25a8 8 0 1 1 10 8c-3 1-3 3-3 5M32 46h.1"/>
+    </symbol>
+    <symbol id="support-35" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M25 9h14v12a7 7 0 1 1 7 7h9v14H43a7 7 0 1 1-7 7v6H22V43a7 7 0 1 1-7-7H9V22h12a7 7 0 1 1 7-7V9z"/>
+    </symbol>
+    <symbol id="support-36" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="20" cy="32" r="10"/>
+  <path d="M30 32h26M47 23l9 9-9 9M20 22V10M14 15l6-6 6 6"/>
+    </symbol>
+    <symbol id="support-37" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="19" r="9"/>
+  <path d="M16 54c1-14 6-22 16-22s15 8 16 22"/>
+  <path d="M8 20h7M49 20h7M32 4v6"/>
+    </symbol>
+    <symbol id="support-38" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="25"/><circle cx="32" cy="32" r="16"/>
+  <circle cx="32" cy="25" r="6"/>
+  <path d="M22 43c1-7 4-11 10-11s9 4 10 11M32 4v7M32 53v7M4 32h7M53 32h7"/>
+    </symbol>
+  </defs>
+  <rect width="1446" height="1458" fill="#eef2f6"/>
+  <text x="42" y="54" fill="#152033"
+        font-family="system-ui, sans-serif" font-size="34"
+        font-weight="750">STIX semantic support assets</text>
+  <text x="42" y="86" fill="#526078"
+        font-family="system-ui, sans-serif" font-size="16">
+    Markings, extension badges and objects, state indicators, fallbacks, and legacy compatibility
+  </text>
+
+  <g>
+    <rect x="42" y="126" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="126" width="5" height="116"
+          rx="2.5" fill="#7c3aed"/>
+    <use x="62" y="148" width="70" height="70"
+         href="#support-0" color="#7c3aed"/>
+    <text x="150" y="156" fill="#7c3aed"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">STIX 2.1 MARKING VARIANTS</text>
+    <text x="150" y="184" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX Statement Marking</text>
+    <text x="150" y="208" fill="#67738a"
+          font-family="monospace" font-size="11">statement-marking</text>
+  </g>
+  <g>
+    <rect x="386" y="126" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="126" width="5" height="116"
+          rx="2.5" fill="#7c3aed"/>
+    <use x="406" y="148" width="70" height="70"
+         href="#support-1" color="#7c3aed"/>
+    <text x="494" y="156" fill="#7c3aed"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">STIX 2.1 MARKING VARIANTS</text>
+    <text x="494" y="184" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX TLP WHITE Marking</text>
+    <text x="494" y="208" fill="#67738a"
+          font-family="monospace" font-size="11">tlp-white</text>
+  </g>
+  <g>
+    <rect x="730" y="126" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="126" width="5" height="116"
+          rx="2.5" fill="#7c3aed"/>
+    <use x="750" y="148" width="70" height="70"
+         href="#support-2" color="#7c3aed"/>
+    <text x="838" y="156" fill="#7c3aed"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">STIX 2.1 MARKING VARIANTS</text>
+    <text x="838" y="184" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX TLP GREEN Marking</text>
+    <text x="838" y="208" fill="#67738a"
+          font-family="monospace" font-size="11">tlp-green</text>
+  </g>
+  <g>
+    <rect x="1074" y="126" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="1074" y="126" width="5" height="116"
+          rx="2.5" fill="#7c3aed"/>
+    <use x="1094" y="148" width="70" height="70"
+         href="#support-3" color="#7c3aed"/>
+    <text x="1182" y="156" fill="#7c3aed"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">STIX 2.1 MARKING VARIANTS</text>
+    <text x="1182" y="184" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX TLP AMBER Marking</text>
+    <text x="1182" y="208" fill="#67738a"
+          font-family="monospace" font-size="11">tlp-amber</text>
+  </g>
+  <g>
+    <rect x="42" y="256" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="256" width="5" height="116"
+          rx="2.5" fill="#7c3aed"/>
+    <use x="62" y="278" width="70" height="70"
+         href="#support-4" color="#7c3aed"/>
+    <text x="150" y="286" fill="#7c3aed"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">STIX 2.1 MARKING VARIANTS</text>
+    <text x="150" y="314" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX TLP RED Marking</text>
+    <text x="150" y="338" fill="#67738a"
+          font-family="monospace" font-size="11">tlp-red</text>
+  </g>
+  <g>
+    <rect x="386" y="256" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="256" width="5" height="116"
+          rx="2.5" fill="#b45309"/>
+    <use x="406" y="278" width="70" height="70"
+         href="#support-5" color="#b45309"/>
+    <text x="494" y="286" fill="#b45309"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">TLP 2.0 COMPATIBILITY</text>
+    <text x="494" y="314" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">TLP CLEAR Marking</text>
+    <text x="494" y="338" fill="#67738a"
+          font-family="monospace" font-size="11">tlp-clear</text>
+  </g>
+  <g>
+    <rect x="730" y="256" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="256" width="5" height="116"
+          rx="2.5" fill="#b45309"/>
+    <use x="750" y="278" width="70" height="70"
+         href="#support-6" color="#b45309"/>
+    <text x="838" y="286" fill="#b45309"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">TLP 2.0 COMPATIBILITY</text>
+    <text x="838" y="314" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">TLP AMBER STRICT Marking</text>
+    <text x="838" y="338" fill="#67738a"
+          font-family="monospace" font-size="11">tlp-amber-strict</text>
+  </g>
+  <g>
+    <rect x="1074" y="256" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="1074" y="256" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="1094" y="278" width="70" height="70"
+         href="#support-7" color="#0369a1"/>
+    <text x="1182" y="286" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="1182" y="314" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="12"
+          font-weight="700">STIX Archive File Extension</text>
+    <text x="1182" y="338" fill="#67738a"
+          font-family="monospace" font-size="11">archive-ext</text>
+  </g>
+  <g>
+    <rect x="42" y="386" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="386" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="62" y="408" width="70" height="70"
+         href="#support-8" color="#0369a1"/>
+    <text x="150" y="416" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="150" y="444" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX NTFS File Extension</text>
+    <text x="150" y="468" fill="#67738a"
+          font-family="monospace" font-size="11">ntfs-ext</text>
+  </g>
+  <g>
+    <rect x="386" y="386" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="386" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="406" y="408" width="70" height="70"
+         href="#support-9" color="#0369a1"/>
+    <text x="494" y="416" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="494" y="444" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX PDF File Extension</text>
+    <text x="494" y="468" fill="#67738a"
+          font-family="monospace" font-size="11">pdf-ext</text>
+  </g>
+  <g>
+    <rect x="730" y="386" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="386" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="750" y="408" width="70" height="70"
+         href="#support-10" color="#0369a1"/>
+    <text x="838" y="416" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="838" y="444" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="11"
+          font-weight="700">STIX Raster Image File Extension</text>
+    <text x="838" y="468" fill="#67738a"
+          font-family="monospace" font-size="11">raster-image-ext</text>
+  </g>
+  <g>
+    <rect x="1074" y="386" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="1074" y="386" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="1094" y="408" width="70" height="70"
+         href="#support-11" color="#0369a1"/>
+    <text x="1182" y="416" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="1182" y="444" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="11"
+          font-weight="700">STIX Windows PE Binary File Extension</text>
+    <text x="1182" y="468" fill="#67738a"
+          font-family="monospace" font-size="11">windows-pebinary-ext</text>
+  </g>
+  <g>
+    <rect x="42" y="516" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="516" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="62" y="538" width="70" height="70"
+         href="#support-12" color="#0369a1"/>
+    <text x="150" y="546" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="150" y="574" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="12"
+          font-weight="700">STIX HTTP Request Extension</text>
+    <text x="150" y="598" fill="#67738a"
+          font-family="monospace" font-size="11">http-request-ext</text>
+  </g>
+  <g>
+    <rect x="386" y="516" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="516" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="406" y="538" width="70" height="70"
+         href="#support-13" color="#0369a1"/>
+    <text x="494" y="546" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="494" y="574" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX ICMP Extension</text>
+    <text x="494" y="598" fill="#67738a"
+          font-family="monospace" font-size="11">icmp-ext</text>
+  </g>
+  <g>
+    <rect x="730" y="516" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="516" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="750" y="538" width="70" height="70"
+         href="#support-14" color="#0369a1"/>
+    <text x="838" y="546" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="838" y="574" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX Socket Extension</text>
+    <text x="838" y="598" fill="#67738a"
+          font-family="monospace" font-size="11">socket-ext</text>
+  </g>
+  <g>
+    <rect x="1074" y="516" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="1074" y="516" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="1094" y="538" width="70" height="70"
+         href="#support-15" color="#0369a1"/>
+    <text x="1182" y="546" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="1182" y="574" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX TCP Extension</text>
+    <text x="1182" y="598" fill="#67738a"
+          font-family="monospace" font-size="11">tcp-ext</text>
+  </g>
+  <g>
+    <rect x="42" y="646" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="646" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="62" y="668" width="70" height="70"
+         href="#support-16" color="#0369a1"/>
+    <text x="150" y="676" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="150" y="704" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="12"
+          font-weight="700">STIX Windows Process Extension</text>
+    <text x="150" y="728" fill="#67738a"
+          font-family="monospace" font-size="11">windows-process-ext</text>
+  </g>
+  <g>
+    <rect x="386" y="646" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="646" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="406" y="668" width="70" height="70"
+         href="#support-17" color="#0369a1"/>
+    <text x="494" y="676" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="494" y="704" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="12"
+          font-weight="700">STIX Windows Service Extension</text>
+    <text x="494" y="728" fill="#67738a"
+          font-family="monospace" font-size="11">windows-service-ext</text>
+  </g>
+  <g>
+    <rect x="730" y="646" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="646" width="5" height="116"
+          rx="2.5" fill="#0369a1"/>
+    <use x="750" y="668" width="70" height="70"
+         href="#support-18" color="#0369a1"/>
+    <text x="838" y="676" fill="#0369a1"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">PREDEFINED EXTENSION BADGES</text>
+    <text x="838" y="704" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="12"
+          font-weight="700">STIX UNIX Account Extension</text>
+    <text x="838" y="728" fill="#67738a"
+          font-family="monospace" font-size="11">unix-account-ext</text>
+  </g>
+  <g>
+    <rect x="1074" y="646" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="1074" y="646" width="5" height="116"
+          rx="2.5" fill="#047857"/>
+    <use x="1094" y="668" width="70" height="70"
+         href="#support-19" color="#047857"/>
+    <text x="1182" y="676" fill="#047857"
+          font-family="system-ui, sans-serif" font-size="7.5"
+          font-weight="800" letter-spacing="0.7">OASIS CANDIDATE-EXTENSION OBJECTS</text>
+    <text x="1182" y="704" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">OASIS STIX Event Extension</text>
+    <text x="1182" y="728" fill="#67738a"
+          font-family="monospace" font-size="11">event</text>
+  </g>
+  <g>
+    <rect x="42" y="776" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="776" width="5" height="116"
+          rx="2.5" fill="#047857"/>
+    <use x="62" y="798" width="70" height="70"
+         href="#support-20" color="#047857"/>
+    <text x="150" y="806" fill="#047857"
+          font-family="system-ui, sans-serif" font-size="7.5"
+          font-weight="800" letter-spacing="0.7">OASIS CANDIDATE-EXTENSION OBJECTS</text>
+    <text x="150" y="834" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="12"
+          font-weight="700">OASIS STIX Impact Extension</text>
+    <text x="150" y="858" fill="#67738a"
+          font-family="monospace" font-size="11">impact</text>
+  </g>
+  <g>
+    <rect x="386" y="776" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="776" width="5" height="116"
+          rx="2.5" fill="#047857"/>
+    <use x="406" y="798" width="70" height="70"
+         href="#support-21" color="#047857"/>
+    <text x="494" y="806" fill="#047857"
+          font-family="system-ui, sans-serif" font-size="7.5"
+          font-weight="800" letter-spacing="0.7">OASIS CANDIDATE-EXTENSION OBJECTS</text>
+    <text x="494" y="834" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">OASIS STIX Task Extension</text>
+    <text x="494" y="858" fill="#67738a"
+          font-family="monospace" font-size="11">task</text>
+  </g>
+  <g>
+    <rect x="730" y="776" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="776" width="5" height="116"
+          rx="2.5" fill="#047857"/>
+    <use x="750" y="798" width="70" height="70"
+         href="#support-22" color="#047857"/>
+    <text x="838" y="806" fill="#047857"
+          font-family="system-ui, sans-serif" font-size="7.5"
+          font-weight="800" letter-spacing="0.7">OASIS CANDIDATE-EXTENSION OBJECTS</text>
+    <text x="838" y="834" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="11"
+          font-weight="700">OASIS STIX Observed String Extension</text>
+    <text x="838" y="858" fill="#67738a"
+          font-family="monospace" font-size="11">observed-string</text>
+  </g>
+  <g>
+    <rect x="1074" y="776" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="1074" y="776" width="5" height="116"
+          rx="2.5" fill="#6d28d9"/>
+    <use x="1094" y="798" width="70" height="70"
+         href="#support-23" color="#6d28d9"/>
+    <text x="1182" y="806" fill="#6d28d9"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">MARKING-EXTENSION BADGES</text>
+    <text x="1182" y="834" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX CUI Marking Extension</text>
+    <text x="1182" y="858" fill="#67738a"
+          font-family="monospace" font-size="11">cui</text>
+  </g>
+  <g>
+    <rect x="42" y="906" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="906" width="5" height="116"
+          rx="2.5" fill="#6d28d9"/>
+    <use x="62" y="928" width="70" height="70"
+         href="#support-24" color="#6d28d9"/>
+    <text x="150" y="936" fill="#6d28d9"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">MARKING-EXTENSION BADGES</text>
+    <text x="150" y="964" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX PAP Marking Extension</text>
+    <text x="150" y="988" fill="#67738a"
+          font-family="monospace" font-size="11">pap</text>
+  </g>
+  <g>
+    <rect x="386" y="906" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="906" width="5" height="116"
+          rx="2.5" fill="#6d28d9"/>
+    <use x="406" y="928" width="70" height="70"
+         href="#support-25" color="#6d28d9"/>
+    <text x="494" y="936" fill="#6d28d9"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">MARKING-EXTENSION BADGES</text>
+    <text x="494" y="964" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX IEP Marking Extension</text>
+    <text x="494" y="988" fill="#67738a"
+          font-family="monospace" font-size="11">iep</text>
+  </g>
+  <g>
+    <rect x="730" y="906" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="906" width="5" height="116"
+          rx="2.5" fill="#be123c"/>
+    <use x="750" y="928" width="70" height="70"
+         href="#support-26" color="#be123c"/>
+    <text x="838" y="936" fill="#be123c"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">STATE AND PROPERTY INDICATORS</text>
+    <text x="838" y="964" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX Defanged State</text>
+    <text x="838" y="988" fill="#67738a"
+          font-family="monospace" font-size="11">defanged</text>
+  </g>
+  <g>
+    <rect x="1074" y="906" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="1074" y="906" width="5" height="116"
+          rx="2.5" fill="#be123c"/>
+    <use x="1094" y="928" width="70" height="70"
+         href="#support-27" color="#be123c"/>
+    <text x="1182" y="936" fill="#be123c"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">STATE AND PROPERTY INDICATORS</text>
+    <text x="1182" y="964" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX Revoked State</text>
+    <text x="1182" y="988" fill="#67738a"
+          font-family="monospace" font-size="11">revoked</text>
+  </g>
+  <g>
+    <rect x="42" y="1036" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="1036" width="5" height="116"
+          rx="2.5" fill="#be123c"/>
+    <use x="62" y="1058" width="70" height="70"
+         href="#support-28" color="#be123c"/>
+    <text x="150" y="1066" fill="#be123c"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">STATE AND PROPERTY INDICATORS</text>
+    <text x="150" y="1094" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX Granular Marking</text>
+    <text x="150" y="1118" fill="#67738a"
+          font-family="monospace" font-size="11">granular-marking</text>
+  </g>
+  <g>
+    <rect x="386" y="1036" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="1036" width="5" height="116"
+          rx="2.5" fill="#be123c"/>
+    <use x="406" y="1058" width="70" height="70"
+         href="#support-29" color="#be123c"/>
+    <text x="494" y="1066" fill="#be123c"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">STATE AND PROPERTY INDICATORS</text>
+    <text x="494" y="1094" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">STIX Language Marking</text>
+    <text x="494" y="1118" fill="#67738a"
+          font-family="monospace" font-size="11">language-marking</text>
+  </g>
+  <g>
+    <rect x="730" y="1036" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="1036" width="5" height="116"
+          rx="2.5" fill="#475569"/>
+    <use x="750" y="1058" width="70" height="70"
+         href="#support-30" color="#475569"/>
+    <text x="838" y="1066" fill="#475569"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">FALLBACKS</text>
+    <text x="838" y="1094" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">Custom STIX Domain Object</text>
+    <text x="838" y="1118" fill="#67738a"
+          font-family="monospace" font-size="11">custom-sdo</text>
+  </g>
+  <g>
+    <rect x="1074" y="1036" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="1074" y="1036" width="5" height="116"
+          rx="2.5" fill="#475569"/>
+    <use x="1094" y="1058" width="70" height="70"
+         href="#support-31" color="#475569"/>
+    <text x="1182" y="1066" fill="#475569"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">FALLBACKS</text>
+    <text x="1182" y="1094" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="11"
+          font-weight="700">Custom STIX Cyber-observable Object</text>
+    <text x="1182" y="1118" fill="#67738a"
+          font-family="monospace" font-size="11">custom-sco</text>
+  </g>
+  <g>
+    <rect x="42" y="1166" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="1166" width="5" height="116"
+          rx="2.5" fill="#475569"/>
+    <use x="62" y="1188" width="70" height="70"
+         href="#support-32" color="#475569"/>
+    <text x="150" y="1196" fill="#475569"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">FALLBACKS</text>
+    <text x="150" y="1224" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="12"
+          font-weight="700">Custom STIX Relationship Object</text>
+    <text x="150" y="1248" fill="#67738a"
+          font-family="monospace" font-size="11">custom-sro</text>
+  </g>
+  <g>
+    <rect x="386" y="1166" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="1166" width="5" height="116"
+          rx="2.5" fill="#475569"/>
+    <use x="406" y="1188" width="70" height="70"
+         href="#support-33" color="#475569"/>
+    <text x="494" y="1196" fill="#475569"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">FALLBACKS</text>
+    <text x="494" y="1224" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">Custom STIX Meta Object</text>
+    <text x="494" y="1248" fill="#67738a"
+          font-family="monospace" font-size="11">custom-smo</text>
+  </g>
+  <g>
+    <rect x="730" y="1166" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="1166" width="5" height="116"
+          rx="2.5" fill="#475569"/>
+    <use x="750" y="1188" width="70" height="70"
+         href="#support-34" color="#475569"/>
+    <text x="838" y="1196" fill="#475569"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">FALLBACKS</text>
+    <text x="838" y="1224" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">Custom STIX Object</text>
+    <text x="838" y="1248" fill="#67738a"
+          font-family="monospace" font-size="11">custom-object</text>
+  </g>
+  <g>
+    <rect x="1074" y="1166" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="1074" y="1166" width="5" height="116"
+          rx="2.5" fill="#475569"/>
+    <use x="1094" y="1188" width="70" height="70"
+         href="#support-35" color="#475569"/>
+    <text x="1182" y="1196" fill="#475569"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">FALLBACKS</text>
+    <text x="1182" y="1224" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">Custom STIX Extension</text>
+    <text x="1182" y="1248" fill="#67738a"
+          font-family="monospace" font-size="11">custom-extension</text>
+  </g>
+  <g>
+    <rect x="42" y="1296" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="42" y="1296" width="5" height="116"
+          rx="2.5" fill="#7c2d12"/>
+    <use x="62" y="1318" width="70" height="70"
+         href="#support-36" color="#7c2d12"/>
+    <text x="150" y="1326" fill="#7c2d12"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">LEGACY COMPATIBILITY</text>
+    <text x="150" y="1354" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">Legacy STIX Source</text>
+    <text x="150" y="1378" fill="#67738a"
+          font-family="monospace" font-size="11">source</text>
+  </g>
+  <g>
+    <rect x="386" y="1296" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="386" y="1296" width="5" height="116"
+          rx="2.5" fill="#7c2d12"/>
+    <use x="406" y="1318" width="70" height="70"
+         href="#support-37" color="#7c2d12"/>
+    <text x="494" y="1326" fill="#7c2d12"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">LEGACY COMPATIBILITY</text>
+    <text x="494" y="1354" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">Legacy STIX Victim</text>
+    <text x="494" y="1378" fill="#67738a"
+          font-family="monospace" font-size="11">victim</text>
+  </g>
+  <g>
+    <rect x="730" y="1296" width="330"
+          height="116" rx="13"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <rect x="730" y="1296" width="5" height="116"
+          rx="2.5" fill="#7c2d12"/>
+    <use x="750" y="1318" width="70" height="70"
+         href="#support-38" color="#7c2d12"/>
+    <text x="838" y="1326" fill="#7c2d12"
+          font-family="system-ui, sans-serif" font-size="9.5"
+          font-weight="800" letter-spacing="0.7">LEGACY COMPATIBILITY</text>
+    <text x="838" y="1354" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="15"
+          font-weight="700">Legacy STIX Victim Target</text>
+    <text x="838" y="1378" fill="#67738a"
+          font-family="monospace" font-size="11">victim-target</text>
+  </g>
+</svg>

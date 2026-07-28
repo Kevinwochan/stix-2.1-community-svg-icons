@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 440" role="img"
+     aria-label="Examples of entity icons composed with semantic badges">
+  <title>STIX semantic resolver composition examples</title>
+  <defs>
+    <symbol id="compose-file" viewBox="0 0 64 64"
+      fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h20l11 11v37H17z"/>
+  <path d="M37 8v11h11"/>
+  <path d="M24 30h17M24 38h17M24 46h10"/>
+  <circle cx="40" cy="46" r="1.5" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="compose-artifact" viewBox="0 0 64 64"
+      fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round"><path d="m10 20 22-11 22 11-22 11zM10 20v26l22 10 22-10V20M32 31v25"/></symbol>
+    <symbol id="compose-indicator" viewBox="0 0 64 64"
+      fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round"><circle cx="28" cy="27" r="15"/>
+  <path d="m39 38 14 14M18 29h5l3-7 5 13 3-6h5"/></symbol>
+    <symbol id="compose-archive" viewBox="0 0 64 64"
+      fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="14" width="44" height="11" rx="3"/>
+  <path d="M14 25v25h36V25M25 34h14M27 42h10"/></symbol>
+    <symbol id="compose-ntfs" viewBox="0 0 64 64"
+      fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round"><path d="M14 10h25l11 11v33H14zM39 10v12h11"/>
+  <circle cx="25" cy="33" r="3"/><circle cx="39" cy="42" r="3"/>
+  <path d="M28 33h5c3 0 6 3 6 6"/></symbol>
+    <symbol id="compose-defanged" viewBox="0 0 64 64"
+      fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round"><path d="M15 11h34v18c0 14-7 22-17 27-10-5-17-13-17-27z"/>
+  <path d="m23 25 5 12 4-8 4 8 5-12M11 53 53 11"/></symbol>
+    <symbol id="compose-revoked" viewBox="0 0 64 64"
+      fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="23"/><path d="m16 48 32-32"/></symbol>
+    <symbol id="compose-tlp-red" viewBox="0 0 64 64"
+      fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="52" height="40" rx="6" fill="#000000" stroke="#FF2B2B"/>
+  <g stroke="#FF2B2B"><path d="M22 44V20h10a8 8 0 0 1 0 16H22M34 36l9 8"/></g></symbol>
+  </defs>
+  <rect width="1200" height="440" fill="#eef2f6"/>
+  <text x="42" y="55" fill="#152033" font-family="system-ui, sans-serif"
+        font-size="34" font-weight="750">Resolver composition examples</text>
+  <text x="42" y="86" fill="#526078" font-family="system-ui, sans-serif"
+        font-size="16">Base entity identity remains visible while semantic layers decorate it.</text>
+
+  <g>
+    <rect x="42" y="122" width="246" height="270" rx="18"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <circle cx="165" cy="221" r="68" fill="#f8fafc"
+            stroke="#075985" stroke-width="3"/>
+    <use x="117" y="173" width="96" height="96"
+         href="#compose-file" color="#075985"/>
+
+    <circle cx="216" cy="274" r="25"
+            fill="#ffffff" stroke="#cbd5e1"/>
+    <use x="198" y="256" width="36" height="36"
+         href="#compose-archive" color="#075985"/>
+    <circle cx="171" cy="274" r="25"
+            fill="#ffffff" stroke="#cbd5e1"/>
+    <use x="153" y="256" width="36" height="36"
+         href="#compose-ntfs" color="#075985"/>
+    <text x="165" y="338" text-anchor="middle"
+          fill="#152033" font-family="system-ui, sans-serif"
+          font-size="15" font-weight="700">File with archive and NTFS</text>
+    <text x="165" y="366" text-anchor="middle"
+          fill="#67738a" font-family="system-ui, sans-serif"
+          font-size="12">App supplies the accessible name</text>
+  </g>
+  <g>
+    <rect x="332" y="122" width="246" height="270" rx="18"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <circle cx="455" cy="221" r="68" fill="#f8fafc"
+            stroke="#4338ca" stroke-width="3"/>
+    <use x="407" y="173" width="96" height="96"
+         href="#compose-artifact" color="#4338ca"/>
+
+    <circle cx="506" cy="274" r="25"
+            fill="#ffffff" stroke="#cbd5e1"/>
+    <use x="488" y="256" width="36" height="36"
+         href="#compose-defanged" color="#4338ca"/>
+    <text x="455" y="338" text-anchor="middle"
+          fill="#152033" font-family="system-ui, sans-serif"
+          font-size="15" font-weight="700">Defanged Artifact</text>
+    <text x="455" y="366" text-anchor="middle"
+          fill="#67738a" font-family="system-ui, sans-serif"
+          font-size="12">App supplies the accessible name</text>
+  </g>
+  <g>
+    <rect x="622" y="122" width="246" height="270" rx="18"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <circle cx="745" cy="221" r="68" fill="#f8fafc"
+            stroke="#9f1239" stroke-width="3"/>
+    <use x="697" y="173" width="96" height="96"
+         href="#compose-indicator" color="#9f1239"/>
+
+    <circle cx="796" cy="274" r="25"
+            fill="#ffffff" stroke="#cbd5e1"/>
+    <use x="778" y="256" width="36" height="36"
+         href="#compose-revoked" color="#9f1239"/>
+    <text x="745" y="338" text-anchor="middle"
+          fill="#152033" font-family="system-ui, sans-serif"
+          font-size="15" font-weight="700">Revoked Indicator</text>
+    <text x="745" y="366" text-anchor="middle"
+          fill="#67738a" font-family="system-ui, sans-serif"
+          font-size="12">App supplies the accessible name</text>
+  </g>
+  <g>
+    <rect x="912" y="122" width="246" height="270" rx="18"
+          fill="#ffffff" stroke="#d9e0e9"/>
+    <circle cx="1035" cy="221" r="68" fill="#f8fafc"
+            stroke="#374151" stroke-width="3"/>
+    <use x="987" y="173" width="96" height="96"
+         href="#compose-indicator" color="#374151"/>
+
+    <circle cx="1086" cy="274" r="25"
+            fill="#ffffff" stroke="#cbd5e1"/>
+    <use x="1068" y="256" width="36" height="36"
+         href="#compose-tlp-red" color="#374151"/>
+    <text x="1035" y="338" text-anchor="middle"
+          fill="#152033" font-family="system-ui, sans-serif"
+          font-size="15" font-weight="700">Indicator marked TLP:RED</text>
+    <text x="1035" y="366" text-anchor="middle"
+          fill="#67738a" font-family="system-ui, sans-serif"
+          font-size="12">App supplies the accessible name</text>
+  </g>
+</svg>

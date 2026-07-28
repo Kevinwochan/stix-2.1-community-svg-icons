@@ -1,0 +1,241 @@
+{
+  "schema_version": 2,
+  "standard": "STIX 2.1 Errata 01",
+  "purpose": "Canonical and semantic inventory for resolving STIX entities, markings, extensions, states, fallbacks, and compatibility aliases to SVG assets.",
+  "scope": {
+    "top_level_entity_types": 43,
+    "custom_types_are_unbounded": true,
+    "policy": {
+      "top_level_types": "Each canonical type requires a distinct SVG icon.",
+      "markings": "Marking-definition variants are resolved from canonical IDs, extension-definition IDs, or definition content rather than the shared marking-definition type.",
+      "predefined_object_extensions": "Render as badges on parent objects; these are not top-level graph entities.",
+      "extension_objects": "OASIS candidate-extension objects are tracked separately from normative STIX 2.1 entities.",
+      "custom_types": "Use category-specific fallbacks when the category is known and custom-object otherwise."
+    }
+  },
+  "entities": [
+    { "type": "attack-pattern", "category": "SDO", "path": "icons/sdo/attack-pattern.svg" },
+    { "type": "campaign", "category": "SDO", "path": "icons/sdo/campaign.svg" },
+    { "type": "course-of-action", "category": "SDO", "path": "icons/sdo/course-of-action.svg" },
+    { "type": "grouping", "category": "SDO", "path": "icons/sdo/grouping.svg" },
+    { "type": "identity", "category": "SDO", "path": "icons/sdo/identity.svg" },
+    { "type": "incident", "category": "SDO", "path": "icons/sdo/incident.svg", "note": "STIX 2.1 stub object" },
+    { "type": "indicator", "category": "SDO", "path": "icons/sdo/indicator.svg" },
+    { "type": "infrastructure", "category": "SDO", "path": "icons/sdo/infrastructure.svg" },
+    { "type": "intrusion-set", "category": "SDO", "path": "icons/sdo/intrusion-set.svg" },
+    { "type": "location", "category": "SDO", "path": "icons/sdo/location.svg" },
+    { "type": "malware", "category": "SDO", "path": "icons/sdo/malware.svg" },
+    { "type": "malware-analysis", "category": "SDO", "path": "icons/sdo/malware-analysis.svg" },
+    { "type": "note", "category": "SDO", "path": "icons/sdo/note.svg" },
+    { "type": "observed-data", "category": "SDO", "path": "icons/sdo/observed-data.svg" },
+    { "type": "opinion", "category": "SDO", "path": "icons/sdo/opinion.svg" },
+    { "type": "report", "category": "SDO", "path": "icons/sdo/report.svg" },
+    { "type": "threat-actor", "category": "SDO", "path": "icons/sdo/threat-actor.svg" },
+    { "type": "tool", "category": "SDO", "path": "icons/sdo/tool.svg" },
+    { "type": "vulnerability", "category": "SDO", "path": "icons/sdo/vulnerability.svg" },
+
+    { "type": "artifact", "category": "SCO", "path": "icons/sco/artifact.svg" },
+    { "type": "autonomous-system", "category": "SCO", "path": "icons/sco/autonomous-system.svg" },
+    { "type": "directory", "category": "SCO", "path": "icons/sco/directory.svg" },
+    { "type": "domain-name", "category": "SCO", "path": "icons/sco/domain-name.svg" },
+    { "type": "email-addr", "category": "SCO", "path": "icons/sco/email-addr.svg" },
+    { "type": "email-message", "category": "SCO", "path": "icons/sco/email-message.svg" },
+    { "type": "file", "category": "SCO", "path": "icons/sco/file.svg" },
+    { "type": "ipv4-addr", "category": "SCO", "path": "icons/sco/ipv4-addr.svg" },
+    { "type": "ipv6-addr", "category": "SCO", "path": "icons/sco/ipv6-addr.svg" },
+    { "type": "mac-addr", "category": "SCO", "path": "icons/sco/mac-addr.svg" },
+    { "type": "mutex", "category": "SCO", "path": "icons/sco/mutex.svg" },
+    { "type": "network-traffic", "category": "SCO", "path": "icons/sco/network-traffic.svg" },
+    { "type": "process", "category": "SCO", "path": "icons/sco/process.svg" },
+    { "type": "software", "category": "SCO", "path": "icons/sco/software.svg" },
+    { "type": "url", "category": "SCO", "path": "icons/sco/url.svg" },
+    { "type": "user-account", "category": "SCO", "path": "icons/sco/user-account.svg" },
+    { "type": "windows-registry-key", "category": "SCO", "path": "icons/sco/windows-registry-key.svg" },
+    { "type": "x509-certificate", "category": "SCO", "path": "icons/sco/x509-certificate.svg" },
+
+    { "type": "relationship", "category": "SRO", "path": "icons/sro/relationship.svg" },
+    { "type": "sighting", "category": "SRO", "path": "icons/sro/sighting.svg" },
+
+    { "type": "extension-definition", "category": "SMO", "path": "icons/smo/extension-definition.svg" },
+    { "type": "language-content", "category": "SMO", "path": "icons/smo/language-content.svg" },
+    { "type": "marking-definition", "category": "SMO", "path": "icons/smo/marking-definition.svg" },
+
+    { "type": "bundle", "category": "Bundle", "path": "icons/bundle/bundle.svg" }
+  ],
+  "marking_variants": [
+    {
+      "key": "statement-marking",
+      "definition_type": "statement",
+      "path": "icons/marking/statement-marking.svg",
+      "status": "normative-stix-2.1"
+    },
+    {
+      "key": "tlp-white",
+      "definition_type": "tlp",
+      "value": "white",
+      "canonical_id": "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+      "path": "icons/marking/tlp-white.svg",
+      "status": "normative-stix-2.1"
+    },
+    {
+      "key": "tlp-green",
+      "definition_type": "tlp",
+      "value": "green",
+      "canonical_id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+      "path": "icons/marking/tlp-green.svg",
+      "status": "normative-stix-2.1"
+    },
+    {
+      "key": "tlp-amber",
+      "definition_type": "tlp",
+      "value": "amber",
+      "canonical_id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+      "path": "icons/marking/tlp-amber.svg",
+      "status": "normative-stix-2.1"
+    },
+    {
+      "key": "tlp-red",
+      "definition_type": "tlp",
+      "value": "red",
+      "canonical_id": "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed",
+      "path": "icons/marking/tlp-red.svg",
+      "status": "normative-stix-2.1"
+    }
+  ],
+  "modern_tlp_variants": [
+    {
+      "key": "tlp-clear",
+      "definition_type": "tlp",
+      "value": "clear",
+      "path": "icons/marking/tlp-clear.svg",
+      "status": "tlp-2.0-compatibility",
+      "note": "Do not silently substitute for the STIX 2.1 TLP:WHITE marking."
+    },
+    {
+      "key": "tlp-amber-strict",
+      "definition_type": "tlp",
+      "value": "amber+strict",
+      "value_aliases": ["amber-strict", "amber strict"],
+      "path": "icons/marking/tlp-amber-strict.svg",
+      "status": "tlp-2.0-compatibility"
+    }
+  ],
+  "predefined_object_extensions": [
+    { "type": "archive-ext", "parent_type": "file", "path": "icons/badge/archive-ext.svg" },
+    { "type": "ntfs-ext", "parent_type": "file", "path": "icons/badge/ntfs-ext.svg" },
+    { "type": "pdf-ext", "parent_type": "file", "path": "icons/badge/pdf-ext.svg" },
+    { "type": "raster-image-ext", "parent_type": "file", "path": "icons/badge/raster-image-ext.svg" },
+    { "type": "windows-pebinary-ext", "parent_type": "file", "path": "icons/badge/windows-pebinary-ext.svg" },
+    { "type": "http-request-ext", "parent_type": "network-traffic", "path": "icons/badge/http-request-ext.svg" },
+    { "type": "icmp-ext", "parent_type": "network-traffic", "path": "icons/badge/icmp-ext.svg" },
+    { "type": "socket-ext", "parent_type": "network-traffic", "path": "icons/badge/socket-ext.svg" },
+    { "type": "tcp-ext", "parent_type": "network-traffic", "path": "icons/badge/tcp-ext.svg" },
+    { "type": "windows-process-ext", "parent_type": "process", "path": "icons/badge/windows-process-ext.svg" },
+    { "type": "windows-service-ext", "parent_type": "process", "path": "icons/badge/windows-service-ext.svg" },
+    { "type": "unix-account-ext", "parent_type": "user-account", "path": "icons/badge/unix-account-ext.svg" }
+  ],
+  "extension_objects": [
+    {
+      "type": "event",
+      "category": "SDO",
+      "extension_definition_id": "extension-definition--4ca6de00-5b0d-45ef-a1dc-ea7279ea910e",
+      "path": "icons/extension/event.svg",
+      "status": "oasis-candidate-extension"
+    },
+    {
+      "type": "impact",
+      "category": "SDO",
+      "extension_definition_id": "extension-definition--7cc33dd6-f6a1-489b-98ea-522d351d71b9",
+      "path": "icons/extension/impact.svg",
+      "status": "oasis-candidate-extension"
+    },
+    {
+      "type": "task",
+      "category": "SDO",
+      "extension_definition_id": "extension-definition--2074a052-8be4-4932-849e-f5e7798e0030",
+      "path": "icons/extension/task.svg",
+      "status": "oasis-candidate-extension"
+    },
+    {
+      "type": "observed-string",
+      "category": "SCO",
+      "extension_definition_id": "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d",
+      "path": "icons/extension/observed-string.svg",
+      "status": "oasis-candidate-extension"
+    }
+  ],
+  "marking_extensions": [
+    {
+      "key": "cui",
+      "extension_definition_id": "extension-definition--dff17fb3-edcb-4f99-ad1b-4b751c95738a",
+      "path": "icons/marking/cui.svg",
+      "status": "oasis-candidate-extension"
+    },
+    {
+      "key": "pap",
+      "extension_definition_id": "extension-definition--f8d78575-edfd-406e-8e84-6162a8450f5b",
+      "path": "icons/marking/pap.svg",
+      "status": "oasis-candidate-extension"
+    },
+    {
+      "key": "iep",
+      "extension_definition_id": "extension-definition--762e2e97-ee51-43e5-a9ea-165fbb862c4a",
+      "path": "icons/marking/iep.svg",
+      "status": "oasis-candidate-extension"
+    }
+  ],
+  "state_badges": [
+    { "key": "defanged", "property": "defanged", "path": "icons/state/defanged.svg" },
+    { "key": "revoked", "property": "revoked", "path": "icons/state/revoked.svg" },
+    { "key": "granular-marking", "property": "granular_markings", "path": "icons/state/granular-marking.svg" },
+    { "key": "language-marking", "property": "lang", "path": "icons/state/language-marking.svg" }
+  ],
+  "fallback_icons": [
+    { "key": "custom-sdo", "category": "SDO", "path": "icons/fallback/custom-sdo.svg" },
+    { "key": "custom-sco", "category": "SCO", "path": "icons/fallback/custom-sco.svg" },
+    { "key": "custom-sro", "category": "SRO", "path": "icons/fallback/custom-sro.svg" },
+    { "key": "custom-smo", "category": "SMO", "path": "icons/fallback/custom-smo.svg" },
+    { "key": "custom-object", "category": "unknown", "path": "icons/fallback/custom-object.svg" },
+    { "key": "custom-extension", "category": "extension", "path": "icons/badge/custom-extension.svg" }
+  ],
+  "compatibility_aliases": [
+    { "alias": "coa", "target": "course-of-action", "path": "icons/sdo/course-of-action.svg", "passthrough": true },
+    { "alias": "language", "target": "language-content", "path": "icons/smo/language-content.svg", "passthrough": true },
+    { "alias": "restricted-marking", "target": "statement-marking", "path": "icons/marking/statement-marking.svg", "passthrough": true },
+    { "alias": "http", "target": "http-request-ext", "path": "icons/badge/http-request-ext.svg", "passthrough": true },
+    { "alias": "tlp", "target": "marking-definition", "path": "icons/smo/marking-definition.svg", "passthrough": true },
+    { "alias": "source", "target": null, "path": "icons/legacy/source.svg", "passthrough": false },
+    { "alias": "victim", "target": null, "path": "icons/legacy/victim.svg", "passthrough": false },
+    { "alias": "victim-target", "target": null, "path": "icons/legacy/victim-target.svg", "passthrough": false },
+    { "alias": "custom-object", "target": "custom-object", "path": "icons/fallback/custom-object.svg", "passthrough": true }
+  ],
+  "required_fallback_icons": [
+    "custom-sdo",
+    "custom-sco",
+    "custom-sro",
+    "custom-smo",
+    "custom-object",
+    "custom-extension"
+  ],
+  "export_profiles": {
+    "freetaxii_issue_4": {
+      "description": "Deterministic 300-dpi PNG exports requested by freetaxii/stix2-graphics issue #4.",
+      "types": [
+        "artifact",
+        "directory",
+        "file",
+        "mutex",
+        "process",
+        "software",
+        "user-account",
+        "windows-registry-key",
+        "x509-certificate"
+      ],
+      "source_directory": "icons/sco",
+      "output_directory": "exports/freetaxii-300dpi",
+      "width": 1200,
+      "height": 1200,
+      "dpi": 300
+    }
+  }
+}

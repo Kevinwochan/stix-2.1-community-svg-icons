@@ -1,0 +1,1536 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1400 1204"
+     role="img"
+     aria-label="OASIS visualizer-compatible STIX type colors for light and dark themes">
+  <title>OASIS visualizer-compatible STIX type colors</title>
+  <defs>
+    <symbol id="icon-attack-pattern" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="22"/>
+  <circle cx="32" cy="32" r="12"/>
+  <circle cx="32" cy="32" r="3" fill="currentColor" stroke="none"/>
+  <path d="M32 6v8M32 50v8M6 32h8M50 32h8"/>
+    </symbol>
+    <symbol id="icon-campaign" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 56V8"/>
+  <path d="M17 11h31l-7 10 7 10H17z"/>
+    </symbol>
+    <symbol id="icon-course-of-action" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 7 51 14v15c0 13-8 22-19 28-11-6-19-15-19-28V14z"/>
+  <path d="m22 32 7 7 14-15"/>
+    </symbol>
+    <symbol id="icon-grouping" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 10h-6v44h6M47 10h6v44h-6"/>
+  <circle cx="32" cy="20" r="6"/><circle cx="22" cy="42" r="6"/><circle cx="42" cy="42" r="6"/>
+  <path d="m29 25-4 11M35 25l4 11M28 42h8"/>
+    </symbol>
+    <symbol id="icon-identity" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="10" y="13" width="44" height="38" rx="5"/>
+  <circle cx="25" cy="28" r="7"/>
+  <path d="M15 44c2-6 6-9 10-9s8 3 10 9M40 25h8M40 32h8M40 39h5"/>
+    </symbol>
+    <symbol id="icon-incident" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 8 57 53H7z"/>
+  <path d="M32 24v14M32 45h.01"/>
+    </symbol>
+    <symbol id="icon-indicator" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="28" cy="27" r="15"/>
+  <path d="m39 38 14 14M18 29h5l3-7 5 13 3-6h5"/>
+    </symbol>
+    <symbol id="icon-infrastructure" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="18" y="8" width="28" height="13" rx="2"/><rect x="18" y="26" width="28" height="13" rx="2"/>
+  <path d="M24 15h.01M30 15h10M24 33h.01M30 33h10M32 39v8M18 55h28M20 47h24v8"/>
+    </symbol>
+    <symbol id="icon-intrusion-set" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="8"/>
+  <circle cx="12" cy="17" r="4"/><circle cx="52" cy="17" r="4"/><circle cx="12" cy="47" r="4"/><circle cx="52" cy="47" r="4"/>
+  <path d="m16 20 10 8M48 20l-10 8M16 44l10-8M48 44l-10-8"/>
+  <path d="m22 25 4 3-4 1M42 25l-4 3 4 1M22 39l4-3-4-1M42 39l-4-3 4-1"/>
+    </symbol>
+    <symbol id="icon-location" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 57S14 40 14 25a18 18 0 0 1 36 0c0 15-18 32-18 32z"/>
+  <circle cx="32" cy="25" r="7"/>
+    </symbol>
+    <symbol id="icon-malware" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="18" y="17" width="28" height="31" rx="12"/>
+  <path d="M26 17v-5l-4-4M38 17v-5l4-4M18 26h-7M18 38h-7M46 26h7M46 38h7M25 48v7M39 48v7"/>
+  <circle cx="27" cy="29" r="2"/><circle cx="37" cy="29" r="2"/><path d="M25 38h14"/>
+    </symbol>
+    <symbol id="icon-malware-analysis" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="27" cy="27" r="14"/><path d="m37 37 15 15"/>
+  <rect x="21" y="20" width="12" height="14" rx="5"/>
+  <path d="M25 20v-3M29 20v-3M21 25h-4M33 25h4M21 30h-4M33 30h4M25 34v3M29 34v3"/>
+    </symbol>
+    <symbol id="icon-note" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 9h36v32L36 55H14z"/>
+  <path d="M36 55V41h14M22 21h20M22 29h16M22 37h9"/>
+    </symbol>
+    <symbol id="icon-observed-data" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="32" cy="16" rx="19" ry="7"/>
+  <path d="M13 16v16c0 4 8.5 7 19 7s19-3 19-7V16M13 32v16c0 4 8.5 7 19 7s19-3 19-7V32"/>
+    </symbol>
+    <symbol id="icon-opinion" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 11h46v32H31L18 54V43H9z"/>
+  <path d="M20 25h24M20 33h17"/>
+    </symbol>
+    <symbol id="icon-report" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 7h27l9 9v41H14zM41 7v9h9"/>
+  <path d="M22 45V34M30 45V27M38 45V38M22 49h20M22 20h12"/>
+    </symbol>
+    <symbol id="icon-threat-actor" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="m21 17 3-9c5 2 11 2 16 0l3 9"/>
+  <path d="M12 19c5-2 12-3 20-3s15 1 20 3c-4 3-11 4-20 4s-16-1-20-4Z"/>
+  <path d="M19 23c0 8 6 14 13 14s13-6 13-14"/>
+  <path d="M20 25c3-1 6-1 9 0v2c0 2-2 3-4 3s-4-1-5-3v-2Zm24 0c-3-1-6-1-9 0v2c0 2 2 3 4 3s4-1 5-3v-2ZM29 26h6"/>
+  <path d="M23 34c-7 2-12 8-14 19M41 34c7 2 12 8 14 19"/>
+  <path d="m23 34-6 8h10m14-8 6 8H37"/>
+  <rect x="14" y="42" width="36" height="16" rx="3"/>
+  <circle cx="32" cy="50" r="1.5" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="icon-tool" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M39 10a12 12 0 0 0-14 15L10 40a7 7 0 0 0 10 10l15-15a12 12 0 0 0 15-14l-8 8-7-7z"/>
+  <circle cx="16" cy="44" r="2"/>
+    </symbol>
+    <symbol id="icon-vulnerability" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 7 51 14v15c0 13-8 22-19 28-11-6-19-15-19-28V14z"/>
+  <path d="m35 12-7 14 8 5-9 17"/>
+    </symbol>
+    <symbol id="icon-artifact" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="m10 20 22-11 22 11-22 11zM10 20v26l22 10 22-10V20M32 31v25"/>
+    </symbol>
+    <symbol id="icon-autonomous-system" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="23"/>
+  <circle cx="32" cy="18" r="5"/><circle cx="20" cy="40" r="5"/><circle cx="44" cy="40" r="5"/>
+  <path d="m29 22-6 13M35 22l6 13M25 40h14"/>
+    </symbol>
+    <symbol id="icon-directory" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 17h19l6 7h25v30H7z"/>
+  <path d="M7 24h50M16 34h13M16 42h22"/>
+    </symbol>
+    <symbol id="icon-domain-name" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="23"/>
+  <path d="M9 32h46M32 9c7 7 11 14 11 23S39 48 32 55M32 9c-7 7-11 14-11 23s4 16 11 23M14 20h36M14 44h36"/>
+    </symbol>
+    <symbol id="icon-email-addr" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="30" cy="32" r="8"/>
+  <path d="M38 32v5c0 3 2 5 5 5 5 0 8-4 8-10 0-11-8-19-20-19-11 0-20 8-20 19s9 19 21 19c5 0 9-1.5 12-4"/>
+    </symbol>
+    <symbol id="icon-email-message" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="7" y="14" width="50" height="36" rx="5"/>
+  <path d="m9 18 23 18 23-18M9 47l17-16M55 47 38 31"/>
+    </symbol>
+    <symbol id="icon-file" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 8h20l11 11v37H17z"/>
+  <path d="M37 8v11h11"/>
+  <path d="M24 30h17M24 38h17M24 46h10"/>
+  <circle cx="40" cy="46" r="1.5" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="icon-ipv4-addr" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="7" y="25" width="10" height="14" rx="2"/><rect x="20" y="25" width="10" height="14" rx="2"/>
+  <rect x="34" y="25" width="10" height="14" rx="2"/><rect x="47" y="25" width="10" height="14" rx="2"/>
+  <path d="M17 32h3M30 32h4M44 32h3"/>
+    </symbol>
+    <symbol id="icon-ipv6-addr" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="m13 20 8-5 8 5v9l-8 5-8-5zM35 20l8-5 8 5v9l-8 5-8-5zM24 39l8-5 8 5v9l-8 5-8-5z"/>
+  <path d="M29 24h6M25 32l4 4M39 32l-4 4"/>
+    </symbol>
+    <symbol id="icon-mac-addr" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="13" y="15" width="38" height="34" rx="4"/>
+  <path d="M20 15V9M28 15V9M36 15V9M44 15V9M20 55v-6M28 55v-6M36 55v-6M44 55v-6"/>
+  <circle cx="22" cy="28" r="2"/><circle cx="32" cy="28" r="2"/><circle cx="42" cy="28" r="2"/>
+  <circle cx="22" cy="38" r="2"/><circle cx="32" cy="38" r="2"/><circle cx="42" cy="38" r="2"/>
+    </symbol>
+    <symbol id="icon-mutex" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="18" y="28" width="28" height="25" rx="4"/>
+  <path d="M24 28v-8a8 8 0 0 1 16 0v8M25 40h14"/>
+  <path d="m31 36-6 4 6 4M33 36l6 4-6 4"/>
+    </symbol>
+    <symbol id="icon-network-traffic" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="10" cy="32" r="5"/><circle cx="54" cy="32" r="5"/>
+  <path d="M15 25h30l-6-6M45 25l-6 6M49 39H19l6 6M19 39l6-6"/>
+    </symbol>
+    <symbol id="icon-process" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="8" width="46" height="48" rx="4"/>
+  <path d="M9 18h46M16 13h.01M22 13h.01"/>
+  <circle cx="24" cy="31" r="4"/><circle cx="40" cy="31" r="4"/><circle cx="32" cy="45" r="4"/>
+  <path d="M28 31h8M26 35l4 7M38 35l-4 7"/>
+    </symbol>
+    <symbol id="icon-software" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="9" width="48" height="46" rx="4"/>
+  <path d="M8 19h48M15 14h.01M21 14h.01"/>
+  <rect x="17" y="28" width="12" height="12" rx="2"/>
+  <circle cx="42" cy="38" r="7"/><path d="M42 27v4M42 45v4M31 38h4M49 38h4M34 30l3 3M47 43l3 3M50 30l-3 3M37 43l-3 3"/>
+    </symbol>
+    <symbol id="icon-url" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="m27 40-5 5a9 9 0 0 1-13-13l10-10a9 9 0 0 1 13 0M37 24l5-5a9 9 0 0 1 13 13L45 42a9 9 0 0 1-13 0"/>
+  <path d="m23 41 18-18"/>
+    </symbol>
+    <symbol id="icon-user-account" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="21" r="10"/>
+  <path d="M10 54c2-13 10-20 22-20s20 7 22 20"/>
+    </symbol>
+    <symbol id="icon-windows-registry-key" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="18" cy="32" r="9"/>
+  <path d="M27 32h28M45 32v8h-7M51 32v-7h4"/>
+  <circle cx="18" cy="32" r="2"/>
+    </symbol>
+    <symbol id="icon-x509-certificate" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 7h30l8 8v42H13zM43 7v8h8M21 22h22M21 30h17"/>
+  <circle cx="32" cy="42" r="7"/>
+  <path d="m28 48-2 9 6-3 6 3-2-9"/>
+    </symbol>
+    <symbol id="icon-relationship" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="15" cy="20" r="7"/>
+  <circle cx="49" cy="44" r="7"/>
+  <path d="m21 24 7 5M36 35l7 5"/>
+  <path d="m32 27 5 5-5 5-5-5z"/>
+  <path d="m39 39 4 1-1 4M25 25l-4-1 1-4"/>
+    </symbol>
+    <symbol id="icon-sighting" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 32s10-17 26-17 26 17 26 17-10 17-26 17S6 32 6 32z"/>
+  <circle cx="32" cy="32" r="8"/>
+  <circle cx="32" cy="32" r="2.5" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="icon-extension-definition" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 13h17v8a6 6 0 1 0 12 0v-8h17v17h-8a6 6 0 1 0 0 12h8v9H9v-9h8a6 6 0 1 0 0-12H9z"/>
+    </symbol>
+    <symbol id="icon-language-content" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 10h48v34H32L19 55V44H8z"/>
+  <circle cx="32" cy="27" r="11"/>
+  <path d="M21 27h22M32 16c4 4 6 7 6 11s-2 7-6 11M32 16c-4 4-6 7-6 11s2 7 6 11"/>
+    </symbol>
+    <symbol id="icon-marking-definition" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18h25l21 14-21 14H9z"/>
+  <circle cx="19" cy="32" r="4"/>
+    </symbol>
+    <symbol id="icon-bundle" viewBox="0 0 64 64"
+            fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="8" width="21" height="21" rx="3"/>
+  <rect x="35" y="8" width="21" height="21" rx="3"/>
+  <rect x="8" y="35" width="21" height="21" rx="3"/>
+  <rect x="35" y="35" width="21" height="21" rx="3"/>
+    </symbol>
+  </defs>
+  <rect width="1400" height="1204" fill="#ffffff"/>
+  <text x="48" y="58" fill="#152033"
+        font-family="system-ui, sans-serif" font-size="38"
+        font-weight="750">STIX type-color compatibility theme</text>
+  <text x="48" y="92" fill="#526078"
+        font-family="system-ui, sans-serif" font-size="16">
+    Non-normative OASIS visualizer cues, adapted for accessible currentColor rendering.
+  </text>
+  <text x="48" y="118" fill="#526078"
+        font-family="system-ui, sans-serif" font-size="14">
+    Each row shows colored-background and standalone variants; monochrome remains the default.
+  </text>
+
+  <g transform="translate(48 138)">
+    <rect width="644" height="1018" rx="20" fill="#EEF2F6"/>
+    <text x="24" y="48" fill="#152033"
+          font-family="system-ui, sans-serif" font-size="24"
+          font-weight="750">Light theme</text>
+    <text x="620" y="47" fill="#526078"
+          font-family="monospace" font-size="13"
+          text-anchor="end">card #FFFFFF</text>
+
+      <g transform="translate(20 78)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#0069B8"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-attack-pattern" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-attack-pattern" color="#0069B8"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Attack Pattern</text>
+        <text x="284" y="22" fill="#0069B8"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#0069B8</text>
+      </g>
+      <g transform="translate(326 78)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#245B86"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-campaign" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-campaign" color="#245B86"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Campaign</text>
+        <text x="284" y="22" fill="#245B86"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#245B86</text>
+      </g>
+      <g transform="translate(20 120)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#08783F"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-course-of-action" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-course-of-action" color="#08783F"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Course of Action</text>
+        <text x="284" y="22" fill="#08783F"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#08783F</text>
+      </g>
+      <g transform="translate(326 120)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#08736D"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-grouping" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-grouping" color="#08736D"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Grouping</text>
+        <text x="284" y="22" fill="#08736D"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#08736D</text>
+      </g>
+      <g transform="translate(20 162)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#6B5E51"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-identity" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-identity" color="#6B5E51"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Identity</text>
+        <text x="284" y="22" fill="#6B5E51"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#6B5E51</text>
+      </g>
+      <g transform="translate(326 162)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#A94B00"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-incident" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-incident" color="#A94B00"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Incident</text>
+        <text x="284" y="22" fill="#A94B00"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#A94B00</text>
+      </g>
+      <g transform="translate(20 204)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#2949B8"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-indicator" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-indicator" color="#2949B8"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Indicator</text>
+        <text x="284" y="22" fill="#2949B8"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#2949B8</text>
+      </g>
+      <g transform="translate(326 204)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#5B616B"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-infrastructure" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-infrastructure" color="#5B616B"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Infrastructure</text>
+        <text x="284" y="22" fill="#5B616B"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#5B616B</text>
+      </g>
+      <g transform="translate(20 246)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#245B86"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-intrusion-set" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-intrusion-set" color="#245B86"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Intrusion Set</text>
+        <text x="284" y="22" fill="#245B86"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#245B86</text>
+      </g>
+      <g transform="translate(326 246)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#005A92"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-location" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-location" color="#005A92"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Location</text>
+        <text x="284" y="22" fill="#005A92"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#005A92</text>
+      </g>
+      <g transform="translate(20 288)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#C52A1A"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-malware" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-malware" color="#C52A1A"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Malware</text>
+        <text x="284" y="22" fill="#C52A1A"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#C52A1A</text>
+      </g>
+      <g transform="translate(326 288)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#C52A1A"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-malware-analysis" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-malware-analysis" color="#C52A1A"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Malware Analysis</text>
+        <text x="284" y="22" fill="#C52A1A"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#C52A1A</text>
+      </g>
+      <g transform="translate(20 330)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#377514"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-note" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-note" color="#377514"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Note</text>
+        <text x="284" y="22" fill="#377514"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#377514</text>
+      </g>
+      <g transform="translate(326 330)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#3566A8"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-observed-data" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-observed-data" color="#3566A8"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Observed Data</text>
+        <text x="284" y="22" fill="#3566A8"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#3566A8</text>
+      </g>
+      <g transform="translate(20 372)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#087783"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-opinion" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-opinion" color="#087783"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Opinion</text>
+        <text x="284" y="22" fill="#087783"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#087783</text>
+      </g>
+      <g transform="translate(326 372)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#5E6078"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-report" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-report" color="#5E6078"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Report</text>
+        <text x="284" y="22" fill="#5E6078"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#5E6078</text>
+      </g>
+      <g transform="translate(20 414)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#C62D1D"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-threat-actor" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-threat-actor" color="#C62D1D"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Threat Actor</text>
+        <text x="284" y="22" fill="#C62D1D"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#C62D1D</text>
+      </g>
+      <g transform="translate(326 414)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#851B12"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-tool" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-tool" color="#851B12"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Tool</text>
+        <text x="284" y="22" fill="#851B12"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#851B12</text>
+      </g>
+      <g transform="translate(20 456)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#68691E"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-vulnerability" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-vulnerability" color="#68691E"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Vulnerability</text>
+        <text x="284" y="22" fill="#68691E"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#68691E</text>
+      </g>
+      <g transform="translate(326 456)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#374151"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-artifact" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-artifact" color="#374151"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Artifact</text>
+        <text x="284" y="22" fill="#374151"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#374151</text>
+      </g>
+      <g transform="translate(20 498)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#1664AD"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-autonomous-system" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-autonomous-system" color="#1664AD"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Autonomous System</text>
+        <text x="284" y="22" fill="#1664AD"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#1664AD</text>
+      </g>
+      <g transform="translate(326 498)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#374151"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-directory" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-directory" color="#374151"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Directory</text>
+        <text x="284" y="22" fill="#374151"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#374151</text>
+      </g>
+      <g transform="translate(20 540)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#1664AD"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-domain-name" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-domain-name" color="#1664AD"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Domain Name</text>
+        <text x="284" y="22" fill="#1664AD"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#1664AD</text>
+      </g>
+      <g transform="translate(326 540)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#7046A8"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-email-addr" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-email-addr" color="#7046A8"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Email Address</text>
+        <text x="284" y="22" fill="#7046A8"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#7046A8</text>
+      </g>
+      <g transform="translate(20 582)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#7046A8"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-email-message" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-email-message" color="#7046A8"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Email Message</text>
+        <text x="284" y="22" fill="#7046A8"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#7046A8</text>
+      </g>
+      <g transform="translate(326 582)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#374151"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-file" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-file" color="#374151"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">File</text>
+        <text x="284" y="22" fill="#374151"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#374151</text>
+      </g>
+      <g transform="translate(20 624)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#1664AD"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-ipv4-addr" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-ipv4-addr" color="#1664AD"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">IPv4 Address</text>
+        <text x="284" y="22" fill="#1664AD"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#1664AD</text>
+      </g>
+      <g transform="translate(326 624)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#1664AD"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-ipv6-addr" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-ipv6-addr" color="#1664AD"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">IPv6 Address</text>
+        <text x="284" y="22" fill="#1664AD"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#1664AD</text>
+      </g>
+      <g transform="translate(20 666)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#1664AD"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-mac-addr" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-mac-addr" color="#1664AD"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">MAC Address</text>
+        <text x="284" y="22" fill="#1664AD"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#1664AD</text>
+      </g>
+      <g transform="translate(326 666)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#374151"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-mutex" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-mutex" color="#374151"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Mutex</text>
+        <text x="284" y="22" fill="#374151"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#374151</text>
+      </g>
+      <g transform="translate(20 708)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#1664AD"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-network-traffic" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-network-traffic" color="#1664AD"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Network Traffic</text>
+        <text x="284" y="22" fill="#1664AD"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#1664AD</text>
+      </g>
+      <g transform="translate(326 708)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#374151"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-process" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-process" color="#374151"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Process</text>
+        <text x="284" y="22" fill="#374151"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#374151</text>
+      </g>
+      <g transform="translate(20 750)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#374151"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-software" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-software" color="#374151"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Software</text>
+        <text x="284" y="22" fill="#374151"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#374151</text>
+      </g>
+      <g transform="translate(326 750)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#374151"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-url" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-url" color="#374151"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">URL</text>
+        <text x="284" y="22" fill="#374151"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#374151</text>
+      </g>
+      <g transform="translate(20 792)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#5B616B"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-user-account" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-user-account" color="#5B616B"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">User Account</text>
+        <text x="284" y="22" fill="#5B616B"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#5B616B</text>
+      </g>
+      <g transform="translate(326 792)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#374151"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-windows-registry-key" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-windows-registry-key" color="#374151"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Windows Registry Key</text>
+        <text x="284" y="22" fill="#374151"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#374151</text>
+      </g>
+      <g transform="translate(20 834)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#374151"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-x509-certificate" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-x509-certificate" color="#374151"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">X.509 Certificate</text>
+        <text x="284" y="22" fill="#374151"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#374151</text>
+      </g>
+      <g transform="translate(326 834)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#08783F"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-relationship" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-relationship" color="#08783F"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Relationship</text>
+        <text x="284" y="22" fill="#08783F"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#08783F</text>
+      </g>
+      <g transform="translate(20 876)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#7046A8"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-sighting" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-sighting" color="#7046A8"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Sighting</text>
+        <text x="284" y="22" fill="#7046A8"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#7046A8</text>
+      </g>
+      <g transform="translate(326 876)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#67459A"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-extension-definition" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-extension-definition" color="#67459A"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Extension Definition</text>
+        <text x="284" y="22" fill="#67459A"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#67459A</text>
+      </g>
+      <g transform="translate(20 918)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#71502F"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-language-content" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-language-content" color="#71502F"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Language Content</text>
+        <text x="284" y="22" fill="#71502F"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#71502F</text>
+      </g>
+      <g transform="translate(326 918)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#5B616B"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-marking-definition" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-marking-definition" color="#5B616B"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Marking Definition</text>
+        <text x="284" y="22" fill="#5B616B"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#5B616B</text>
+      </g>
+      <g transform="translate(20 960)">
+        <rect width="294" height="34" rx="8" fill="#FFFFFF"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#76502C"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-bundle" color="#FFFFFF"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-bundle" color="#76502C"/>
+        <text x="72" y="22" fill="#152033"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Bundle</text>
+        <text x="284" y="22" fill="#76502C"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#76502C</text>
+      </g>
+  </g>
+
+  <g transform="translate(708 138)">
+    <rect width="644" height="1018" rx="20" fill="#0B1220"/>
+    <text x="24" y="48" fill="#F1F5F9"
+          font-family="system-ui, sans-serif" font-size="24"
+          font-weight="750">Dark theme</text>
+    <text x="620" y="47" fill="#A8B3C5"
+          font-family="monospace" font-size="13"
+          text-anchor="end">card #151E2E</text>
+
+      <g transform="translate(20 78)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#72BCFF"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-attack-pattern" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-attack-pattern" color="#72BCFF"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Attack Pattern</text>
+        <text x="284" y="22" fill="#72BCFF"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#72BCFF</text>
+      </g>
+      <g transform="translate(326 78)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#8BC0E8"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-campaign" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-campaign" color="#8BC0E8"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Campaign</text>
+        <text x="284" y="22" fill="#8BC0E8"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#8BC0E8</text>
+      </g>
+      <g transform="translate(20 120)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#67D99B"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-course-of-action" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-course-of-action" color="#67D99B"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Course of Action</text>
+        <text x="284" y="22" fill="#67D99B"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#67D99B</text>
+      </g>
+      <g transform="translate(326 120)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#73D5CC"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-grouping" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-grouping" color="#73D5CC"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Grouping</text>
+        <text x="284" y="22" fill="#73D5CC"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#73D5CC</text>
+      </g>
+      <g transform="translate(20 162)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBBEB1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-identity" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-identity" color="#CBBEB1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Identity</text>
+        <text x="284" y="22" fill="#CBBEB1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBBEB1</text>
+      </g>
+      <g transform="translate(326 162)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#FFAD6B"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-incident" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-incident" color="#FFAD6B"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Incident</text>
+        <text x="284" y="22" fill="#FFAD6B"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#FFAD6B</text>
+      </g>
+      <g transform="translate(20 204)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#9BB0FF"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-indicator" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-indicator" color="#9BB0FF"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Indicator</text>
+        <text x="284" y="22" fill="#9BB0FF"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#9BB0FF</text>
+      </g>
+      <g transform="translate(326 204)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#BDC4CE"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-infrastructure" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-infrastructure" color="#BDC4CE"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Infrastructure</text>
+        <text x="284" y="22" fill="#BDC4CE"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#BDC4CE</text>
+      </g>
+      <g transform="translate(20 246)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#8BC0E8"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-intrusion-set" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-intrusion-set" color="#8BC0E8"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Intrusion Set</text>
+        <text x="284" y="22" fill="#8BC0E8"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#8BC0E8</text>
+      </g>
+      <g transform="translate(326 246)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#82C4EE"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-location" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-location" color="#82C4EE"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Location</text>
+        <text x="284" y="22" fill="#82C4EE"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#82C4EE</text>
+      </g>
+      <g transform="translate(20 288)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#FF8A7D"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-malware" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-malware" color="#FF8A7D"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Malware</text>
+        <text x="284" y="22" fill="#FF8A7D"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#FF8A7D</text>
+      </g>
+      <g transform="translate(326 288)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#FF8A7D"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-malware-analysis" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-malware-analysis" color="#FF8A7D"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Malware Analysis</text>
+        <text x="284" y="22" fill="#FF8A7D"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#FF8A7D</text>
+      </g>
+      <g transform="translate(20 330)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#9DDA78"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-note" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-note" color="#9DDA78"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Note</text>
+        <text x="284" y="22" fill="#9DDA78"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#9DDA78</text>
+      </g>
+      <g transform="translate(326 330)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#98BEF5"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-observed-data" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-observed-data" color="#98BEF5"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Observed Data</text>
+        <text x="284" y="22" fill="#98BEF5"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#98BEF5</text>
+      </g>
+      <g transform="translate(20 372)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#72D1DC"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-opinion" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-opinion" color="#72D1DC"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Opinion</text>
+        <text x="284" y="22" fill="#72D1DC"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#72D1DC</text>
+      </g>
+      <g transform="translate(326 372)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#C2C4DB"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-report" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-report" color="#C2C4DB"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Report</text>
+        <text x="284" y="22" fill="#C2C4DB"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#C2C4DB</text>
+      </g>
+      <g transform="translate(20 414)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#FF8D80"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-threat-actor" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-threat-actor" color="#FF8D80"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Threat Actor</text>
+        <text x="284" y="22" fill="#FF8D80"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#FF8D80</text>
+      </g>
+      <g transform="translate(326 414)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#F39A8F"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-tool" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-tool" color="#F39A8F"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Tool</text>
+        <text x="284" y="22" fill="#F39A8F"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#F39A8F</text>
+      </g>
+      <g transform="translate(20 456)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#C7C96C"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-vulnerability" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-vulnerability" color="#C7C96C"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Vulnerability</text>
+        <text x="284" y="22" fill="#C7C96C"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#C7C96C</text>
+      </g>
+      <g transform="translate(326 456)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBD5E1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-artifact" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-artifact" color="#CBD5E1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Artifact</text>
+        <text x="284" y="22" fill="#CBD5E1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBD5E1</text>
+      </g>
+      <g transform="translate(20 498)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#83BAF4"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-autonomous-system" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-autonomous-system" color="#83BAF4"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Autonomous System</text>
+        <text x="284" y="22" fill="#83BAF4"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#83BAF4</text>
+      </g>
+      <g transform="translate(326 498)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBD5E1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-directory" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-directory" color="#CBD5E1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Directory</text>
+        <text x="284" y="22" fill="#CBD5E1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBD5E1</text>
+      </g>
+      <g transform="translate(20 540)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#83BAF4"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-domain-name" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-domain-name" color="#83BAF4"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Domain Name</text>
+        <text x="284" y="22" fill="#83BAF4"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#83BAF4</text>
+      </g>
+      <g transform="translate(326 540)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#C7A6F4"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-email-addr" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-email-addr" color="#C7A6F4"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Email Address</text>
+        <text x="284" y="22" fill="#C7A6F4"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#C7A6F4</text>
+      </g>
+      <g transform="translate(20 582)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#C7A6F4"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-email-message" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-email-message" color="#C7A6F4"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Email Message</text>
+        <text x="284" y="22" fill="#C7A6F4"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#C7A6F4</text>
+      </g>
+      <g transform="translate(326 582)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBD5E1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-file" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-file" color="#CBD5E1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">File</text>
+        <text x="284" y="22" fill="#CBD5E1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBD5E1</text>
+      </g>
+      <g transform="translate(20 624)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#83BAF4"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-ipv4-addr" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-ipv4-addr" color="#83BAF4"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">IPv4 Address</text>
+        <text x="284" y="22" fill="#83BAF4"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#83BAF4</text>
+      </g>
+      <g transform="translate(326 624)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#83BAF4"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-ipv6-addr" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-ipv6-addr" color="#83BAF4"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">IPv6 Address</text>
+        <text x="284" y="22" fill="#83BAF4"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#83BAF4</text>
+      </g>
+      <g transform="translate(20 666)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#83BAF4"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-mac-addr" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-mac-addr" color="#83BAF4"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">MAC Address</text>
+        <text x="284" y="22" fill="#83BAF4"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#83BAF4</text>
+      </g>
+      <g transform="translate(326 666)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBD5E1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-mutex" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-mutex" color="#CBD5E1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Mutex</text>
+        <text x="284" y="22" fill="#CBD5E1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBD5E1</text>
+      </g>
+      <g transform="translate(20 708)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#83BAF4"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-network-traffic" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-network-traffic" color="#83BAF4"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Network Traffic</text>
+        <text x="284" y="22" fill="#83BAF4"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#83BAF4</text>
+      </g>
+      <g transform="translate(326 708)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBD5E1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-process" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-process" color="#CBD5E1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Process</text>
+        <text x="284" y="22" fill="#CBD5E1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBD5E1</text>
+      </g>
+      <g transform="translate(20 750)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBD5E1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-software" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-software" color="#CBD5E1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Software</text>
+        <text x="284" y="22" fill="#CBD5E1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBD5E1</text>
+      </g>
+      <g transform="translate(326 750)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBD5E1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-url" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-url" color="#CBD5E1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">URL</text>
+        <text x="284" y="22" fill="#CBD5E1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBD5E1</text>
+      </g>
+      <g transform="translate(20 792)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#BDC4CE"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-user-account" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-user-account" color="#BDC4CE"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">User Account</text>
+        <text x="284" y="22" fill="#BDC4CE"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#BDC4CE</text>
+      </g>
+      <g transform="translate(326 792)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBD5E1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-windows-registry-key" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-windows-registry-key" color="#CBD5E1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Windows Registry Key</text>
+        <text x="284" y="22" fill="#CBD5E1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBD5E1</text>
+      </g>
+      <g transform="translate(20 834)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#CBD5E1"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-x509-certificate" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-x509-certificate" color="#CBD5E1"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">X.509 Certificate</text>
+        <text x="284" y="22" fill="#CBD5E1"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#CBD5E1</text>
+      </g>
+      <g transform="translate(326 834)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#67D99B"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-relationship" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-relationship" color="#67D99B"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Relationship</text>
+        <text x="284" y="22" fill="#67D99B"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#67D99B</text>
+      </g>
+      <g transform="translate(20 876)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#C7A6F4"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-sighting" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-sighting" color="#C7A6F4"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Sighting</text>
+        <text x="284" y="22" fill="#C7A6F4"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#C7A6F4</text>
+      </g>
+      <g transform="translate(326 876)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#BEA1E8"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-extension-definition" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-extension-definition" color="#BEA1E8"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Extension Definition</text>
+        <text x="284" y="22" fill="#BEA1E8"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#BEA1E8</text>
+      </g>
+      <g transform="translate(20 918)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#D0AF8D"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-language-content" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-language-content" color="#D0AF8D"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Language Content</text>
+        <text x="284" y="22" fill="#D0AF8D"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#D0AF8D</text>
+      </g>
+      <g transform="translate(326 918)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#BDC4CE"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-marking-definition" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-marking-definition" color="#BDC4CE"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Marking Definition</text>
+        <text x="284" y="22" fill="#BDC4CE"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#BDC4CE</text>
+      </g>
+      <g transform="translate(20 960)">
+        <rect width="294" height="34" rx="8" fill="#151E2E"/>
+        <rect x="6" y="4" width="26" height="26" rx="7" fill="#D6B28C"/>
+        <use x="10" y="8" width="18" height="18"
+             href="#icon-bundle" color="#151E2E"/>
+        <use x="40" y="5" width="24" height="24"
+             href="#icon-bundle" color="#D6B28C"/>
+        <text x="72" y="22" fill="#F1F5F9"
+              font-family="system-ui, sans-serif" font-size="12.5"
+              font-weight="650">Bundle</text>
+        <text x="284" y="22" fill="#D6B28C"
+              font-family="monospace" font-size="10.5"
+              text-anchor="end">#D6B28C</text>
+      </g>
+  </g>
+</svg>
