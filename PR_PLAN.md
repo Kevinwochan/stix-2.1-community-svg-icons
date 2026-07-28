@@ -410,8 +410,8 @@ Each PR should include:
 
 ## Baseline readiness and release gate
 
-This snapshot records locally verified source readiness. Upstream integration
-remains gated separately:
+This snapshot records the verified implementation and publication state.
+OASIS submission remains gated separately by its Individual CLA:
 
 - Canonical coverage: 43 of 43 top-level STIX 2.1 entity types.
 - Semantic support coverage: 39 of 39 inventoried assets, for 82 unique SVGs.
@@ -430,13 +430,35 @@ remains gated separately:
 - Reusable `defanged`, `revoked`, granular-marking, and language-marking
   indicators: implemented.
 - Alias manifest and semantic resolver: implemented; 11 local tests passing.
-- Consuming-application integration and accessibility verification: pending in
-  the visualizer and documentation worktrees.
+- Visualizer integration: implemented and pushed to
+  `Kevinwochan/cti-stix-visualization` on
+  `codex/stix-2.1-svg-icons`; resolver, mocked vis-network integration,
+  JavaScript syntax, package contents, XML, and accessibility surfaces pass
+  locally.
+- Documentation integration: implemented and pushed to
+  `Kevinwochan/cti-documentation` on
+  `codex/stix-2.1-svg-doc-icons`; 223 references across 23 files are migrated,
+  including 148 nested relationship-diagram references. The dependency-free
+  reference audit and strict XML checks pass locally.
 - Nine deterministic PNG exports requested by FreeTAXII issue #4: generated at
   1200 × 1200 with verified 300-dpi metadata and reproducibility.
 - Support-asset generation and PNG export generation: byte-for-byte
   reproducible locally.
-- Local Git repository: initial repository with no remote.
-- GitHub authentication: available through the local GitHub CLI.
-- Required forks: not yet created for the four target repositories.
-- Upstream PRs: not yet opened.
+- Canonical repository: published at
+  <https://github.com/Kevinwochan/stix-2.1-community-svg-icons>; validation CI
+  is green for source commit `58aad32`.
+- Required forks: created for all four target repositories and each reviewed
+  branch is pushed.
+- FreeTAXII graphics PR: draft
+  <https://github.com/freetaxii/stix2-graphics/pull/8>; GitHub reports it
+  mergeable with a clean merge state.
+- FreeTAXII gallery PR: draft
+  <https://github.com/freetaxii/freetaxii.github.io/pull/2>; GitHub reports it
+  mergeable with a clean merge state.
+- OASIS visualizer and documentation PRs: deliberately not opened because the
+  OASIS Individual CLA must be signed before formal contribution. Both
+  fully reviewed branches are published on the contributor forks.
+- Documentation Jekyll build: not completed locally because the repository's
+  unconstrained dependency resolution requires a newer Ruby than the host.
+  The icon/reference audit is wired into the existing GitHub Actions workflow,
+  which will run with the repository's normal validator when the PR is opened.
