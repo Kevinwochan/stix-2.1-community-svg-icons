@@ -2,6 +2,10 @@
 
 An original, vector-native icon and badge family for STIX 2.1 applications.
 
+## Demo
+
+[![Catalog of all 43 canonical STIX 2.1 SVG entity icons](preview/catalog.png)](preview/catalog.png)
+
 The 43 entity icons are the core artwork layer:
 
 - 18 fully defined STIX Domain Objects, plus the STIX 2.1 Incident stub
