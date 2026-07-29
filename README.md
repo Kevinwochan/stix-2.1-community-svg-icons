@@ -67,9 +67,12 @@ inherit `currentColor` from the surrounding page.
 
 TLP badges are the intentional semantic exception to the monochrome contract.
 Their glyphs use the applicable FIRST display colors as filled STIX marking
-tags, plus distinct path-drawn scope pictograms. Consuming interfaces must
-place the complete uppercase TLP label alongside the glyph, so color is never
-the only cue. STIX 2.1 `TLP:WHITE` is
+tags, plus original path-drawn scope pictograms. These pictograms are
+non-normative community artwork: the applicable FIRST color and literal
+uppercase TLP label remain authoritative. Consuming interfaces must place that
+complete label alongside the glyph and expose an accessible native name, so
+neither color nor the illustrative cue carries the meaning alone.
+STIX 2.1 `TLP:WHITE` is
 preserved as a serialization-compatibility presentation and must not be
 silently rewritten to current TLP 2.0 `TLP:CLEAR`.
 
@@ -103,6 +106,9 @@ when the artwork is the only visible type identifier, such as documentation
 diagrams, selector grids, download galleries, and exported images.
 Their labels use deterministic vector paths rather than fonts, so the SVGs
 remain self-contained and the PNG exports reproduce consistently.
+Render labeled TLP tiles at 96 CSS pixels or larger. At compact sizes, use the
+base or filled glyph with adjacent native text instead; path-drawn labels are
+visual artwork and do not replace accessible application text.
 
 Keep the glyph-only assets when an application already prints the object type
 beneath a graph node or beside a legend icon. Extension and state badges also

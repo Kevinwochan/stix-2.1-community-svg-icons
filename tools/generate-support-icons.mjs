@@ -121,7 +121,8 @@ const tlp = {
   "icons/marking/tlp-white.svg": {
     title: "STIX TLP WHITE Compatibility Marking",
     color: "#FFFFFF",
-    cue: `<path d="m31 27 8-4M31 33l12-6M35 39l8-4"/>`,
+    cue: `<circle cx="38" cy="32" r="9"/>
+    <path d="M38 27v6l4 2"/>`,
   },
   "icons/marking/tlp-green.svg": {
     title: "STIX TLP GREEN Marking",
@@ -134,10 +135,15 @@ const tlp = {
   "icons/marking/tlp-amber.svg": {
     title: "STIX TLP AMBER Marking",
     color: "#FFC000",
-    cue: `<circle cx="36" cy="27" r="3" fill="#111827" stroke="none"/>
-    <circle cx="30" cy="31" r="2.5" fill="#111827" stroke="none"/>
-    <circle cx="42" cy="31" r="2.5" fill="#111827" stroke="none"/>
-    <path d="M30 40c.5-5 2.5-8 6-8s5.5 3 6 8M26 40c.3-3 1.5-5 4-5M46 40c-.3-3-1.5-5-4-5"/>`,
+    cue: `<rect x="27" y="25" width="9" height="16" rx="1"
+           fill="#111827" stroke="none"/>
+    <rect x="29" y="28" width="2" height="2" fill="#FFC000" stroke="none"/>
+    <rect x="33" y="28" width="2" height="2" fill="#FFC000" stroke="none"/>
+    <rect x="29" y="33" width="2" height="2" fill="#FFC000" stroke="none"/>
+    <rect x="33" y="33" width="2" height="2" fill="#FFC000" stroke="none"/>
+    <rect x="31" y="37" width="3" height="4" fill="#FFC000" stroke="none"/>
+    <circle cx="41" cy="28.5" r="2.5" fill="#111827" stroke="none"/>
+    <path d="M37.5 39c.4-4.2 1.6-6.5 3.5-6.5s3.1 2.3 3.5 6.5"/>`,
   },
   "icons/marking/tlp-red.svg": {
     title: "STIX TLP RED Marking",
@@ -154,7 +160,14 @@ const tlp = {
   "icons/marking/tlp-amber-strict.svg": {
     title: "STIX TLP AMBER STRICT Marking",
     color: "#FFC000",
-    cue: `<path d="M30 41V29l7-5 7 5v12M34 41V30h6v11M28 41h18"/>`,
+    cue: `<rect x="30" y="24" width="14" height="17" rx="1"
+           fill="#111827" stroke="none"/>
+    <rect x="33" y="27" width="2" height="2" fill="#FFC000" stroke="none"/>
+    <rect x="39" y="27" width="2" height="2" fill="#FFC000" stroke="none"/>
+    <rect x="33" y="32" width="2" height="2" fill="#FFC000" stroke="none"/>
+    <rect x="39" y="32" width="2" height="2" fill="#FFC000" stroke="none"/>
+    <rect x="36" y="36" width="3" height="5" fill="#FFC000" stroke="none"/>
+    <path d="M28 41h18"/>`,
   },
 };
 
