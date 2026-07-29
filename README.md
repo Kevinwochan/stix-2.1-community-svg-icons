@@ -77,6 +77,21 @@ application accessibility when an icon is loaded as an image or painted on a
 canvas. Consuming applications must expose an accessible node, legend, or
 badge name independently of the SVG `<title>` and `aria-label`.
 
+## Filled graph and legend icons
+
+The optional `icons/filled/` variants place the canonical glyph on a compact
+circular background using the non-normative OASIS visualizer-compatible
+type palette. Their white glyphs meet the declared 4.5:1 contrast threshold
+against every type background. TLP variants retain their applicable FIRST
+display colors on black rather than being recolored as ordinary object types.
+
+Use these glyph-only variants in graphs and legends that already render the
+object type or instance label. They are also suitable for external-image and
+canvas renderers, where a normal `currentColor` SVG cannot inherit color from
+the surrounding application. Keep the monochrome canonical assets when the
+consumer controls `currentColor`, and use the labeled tiles when the artwork
+must remain identifiable without adjacent text.
+
 ## Labeled presentation tiles
 
 The optional `icons/labeled/` variants place each standalone entity or marking

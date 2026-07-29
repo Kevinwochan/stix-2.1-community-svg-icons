@@ -25,23 +25,34 @@ const assetGroups = {
 const expectedPaths = new Set(
   Object.values(assetGroups).flat().map((entry) => entry.path),
 );
+const filledVariant = inventory.presentation_variants.filled_icons;
 const labeledVariant = inventory.presentation_variants.labeled_tiles;
-const labeledCategoryDirectory = {
+const presentationCategoryDirectory = {
   SDO: "sdo",
   SCO: "sco",
   SRO: "sro",
   SMO: "smo",
   Bundle: "bundle",
 };
+const markingEntries = [
+  ...inventory.marking_variants,
+  ...inventory.modern_tlp_variants,
+];
+const expectedFilledPaths = new Set([
+  ...inventory.entities.map((entry) =>
+    `${filledVariant.output_directory}/`
+    + `${presentationCategoryDirectory[entry.category]}/${entry.type}.svg`
+  ),
+  ...markingEntries.map((entry) =>
+    `${filledVariant.output_directory}/marking/${entry.key}.svg`
+  ),
+]);
 const expectedLabeledPaths = new Set([
   ...inventory.entities.map((entry) =>
     `${labeledVariant.output_directory}/`
-    + `${labeledCategoryDirectory[entry.category]}/${entry.type}.svg`
+    + `${presentationCategoryDirectory[entry.category]}/${entry.type}.svg`
   ),
-  ...[
-    ...inventory.marking_variants,
-    ...inventory.modern_tlp_variants,
-  ].map((entry) =>
+  ...markingEntries.map((entry) =>
     `${labeledVariant.output_directory}/marking/${entry.key}.svg`
   ),
 ]);
@@ -63,6 +74,12 @@ const allSvgPaths = await findSvgPaths(join(projectRoot, "icons"));
 const actualPaths = new Set(
   allSvgPaths.filter((path) =>
     !path.startsWith(`${labeledVariant.output_directory}/`)
+    && !path.startsWith(`${filledVariant.output_directory}/`)
+  ),
+);
+const actualFilledPaths = new Set(
+  allSvgPaths.filter((path) =>
+    path.startsWith(`${filledVariant.output_directory}/`)
   ),
 );
 const actualLabeledPaths = new Set(
@@ -80,6 +97,18 @@ for (const path of actualPaths) {
   if (!expectedPaths.has(path)) errors.push(`Unexpected icon: ${path}`);
 }
 
+for (const path of expectedFilledPaths) {
+  if (!actualFilledPaths.has(path)) {
+    errors.push(`Missing filled icon: ${path}`);
+  }
+}
+
+for (const path of actualFilledPaths) {
+  if (!expectedFilledPaths.has(path)) {
+    errors.push(`Unexpected filled icon: ${path}`);
+  }
+}
+
 for (const path of expectedLabeledPaths) {
   if (!actualLabeledPaths.has(path)) {
     errors.push(`Missing labeled tile: ${path}`);
@@ -93,9 +122,15 @@ for (const path of actualLabeledPaths) {
 }
 
 if (
+  inventory.entities.length !== filledVariant.entity_count
+  || markingEntries.length !== filledVariant.marking_count
+) {
+  errors.push("Filled icon inventory counts do not match their source groups");
+}
+
+if (
   inventory.entities.length !== labeledVariant.entity_count
-  || inventory.marking_variants.length
-    + inventory.modern_tlp_variants.length !== labeledVariant.marking_count
+  || markingEntries.length !== labeledVariant.marking_count
 ) {
   errors.push("Labeled tile inventory counts do not match their source groups");
 }
@@ -197,6 +232,52 @@ for (const path of [...actualPaths].sort()) {
   }
 }
 
+for (const path of [...actualFilledPaths].sort()) {
+  const source = await readFile(join(projectRoot, path), "utf8");
+  const requiredPatterns = [
+    ["an SVG root element", /^<svg\s/],
+    ["the compact filled viewBox", /viewBox="0 0 64 64"/],
+    ["an accessible image role", /role="img"/],
+    ["an aria-label", /aria-label="[^"]+ filled icon"/],
+    ["a matching accessible title", /<title>[^<]+ filled icon<\/title>/],
+    [
+      "a circular filled background",
+      /<circle cx="32" cy="32" r="31" fill="#[0-9A-F]{6}" stroke="none"\/>/,
+    ],
+    [
+      "vector geometry",
+      /<(?:path|circle|rect|line|polyline|polygon|ellipse)\b/,
+    ],
+  ];
+  for (const [description, pattern] of requiredPatterns) {
+    if (!pattern.test(source)) {
+      errors.push(`${path}: missing ${description}`);
+    }
+  }
+  const forbiddenPatterns = [
+    ["scripts", /<script\b/i],
+    ["embedded or external images", /<image\b/i],
+    ["foreign objects", /<foreignObject\b/i],
+    ["style blocks", /<style\b/i],
+    ["text geometry", /<text\b/i],
+    ["external references", /\b(?:href|xlink:href)=/i],
+    ["URL references", /url\s*\(/i],
+    ["transform-dependent geometry", /\btransform=/i],
+    ["font dependencies", /<font\b|font-family\s*=/i],
+    ["inherited currentColor", /currentColor/],
+  ];
+  for (const [description, pattern] of forbiddenPatterns) {
+    if (pattern.test(source)) {
+      errors.push(`${path}: contains ${description}`);
+    }
+  }
+  const title = source.match(/<title>([^<]+)<\/title>/)?.[1];
+  const ariaLabel = source.match(/aria-label="([^"]+)"/)?.[1];
+  if (title && ariaLabel && title !== ariaLabel) {
+    errors.push(`${path}: title and aria-label do not match`);
+  }
+}
+
 for (const path of [...actualLabeledPaths].sort()) {
   const source = await readFile(join(projectRoot, path), "utf8");
   const requiredPatterns = [
@@ -271,6 +352,51 @@ for (const type of mappedTypes) {
 for (const [type, tokenName] of Object.entries(compatibilityProfile.types)) {
   if (!compatibilityProfile.tokens[tokenName]) {
     errors.push(`${type}: unknown compatibility color token ${tokenName}`);
+  }
+}
+
+for (const entity of inventory.entities) {
+  const directory = presentationCategoryDirectory[entity.category];
+  const path = `${filledVariant.output_directory}/${directory}/`
+    + `${entity.type}.svg`;
+  const source = await readFile(join(projectRoot, path), "utf8");
+  const token = compatibilityProfile.types[entity.type];
+  const background = compatibilityProfile.tokens[token].light;
+  if (!source.includes(`fill="${background}"`)) {
+    errors.push(`${path}: missing declared ${entity.type} background ${background}`);
+  }
+  if (
+    !source.includes('stroke="#FFFFFF"')
+    || !source.includes('color="#FFFFFF"')
+  ) {
+    errors.push(`${path}: missing self-contained white glyph treatment`);
+  }
+  const ratio = contrastRatio(filledVariant.foreground, background);
+  if (ratio < colorScheme.accessibility.minimum_contrast_ratio) {
+    errors.push(
+      `${path}: ${ratio.toFixed(2)}:1 white-on-background contrast is below `
+      + `${colorScheme.accessibility.minimum_contrast_ratio}:1`,
+    );
+  }
+}
+
+for (const entry of markingEntries) {
+  const path = `${filledVariant.output_directory}/marking/${entry.key}.svg`;
+  const source = await readFile(join(projectRoot, path), "utf8");
+  const isTlp = entry.key.startsWith("tlp-");
+  const background = isTlp
+    ? filledVariant.tlp_background
+    : filledVariant.marking_background;
+  if (!source.includes(`fill="${background}"`)) {
+    errors.push(`${path}: missing declared marking background ${background}`);
+  }
+  if (isTlp) {
+    const color = officialTlpColors[entry.key];
+    if (!source.includes(color)) {
+      errors.push(`${path}: missing official ${entry.key} color ${color}`);
+    }
+  } else if (!source.includes('stroke="#FFFFFF"')) {
+    errors.push(`${path}: missing self-contained white marking glyph`);
   }
 }
 
@@ -378,8 +504,9 @@ if (errors.length > 0) {
     .map(([name, entries]) => `${name.replaceAll("_", " ")} ${entries.length}`)
     .join(", ");
   process.stdout.write(
-    `Validated ${actualPaths.size} unique, dependency-free SVG assets `
-    + `and ${actualLabeledPaths.size} labeled presentation tiles `
+    `Validated ${actualPaths.size} unique, dependency-free SVG assets, `
+    + `${actualFilledPaths.size} filled icons, and `
+    + `${actualLabeledPaths.size} labeled presentation tiles `
     + `(${summary}); entity theme colors exceed `
     + `${colorScheme.accessibility.minimum_contrast_ratio}:1 contrast; `
     + `${exportProfile?.types.length ?? 0} PNG exports passed dimension and `

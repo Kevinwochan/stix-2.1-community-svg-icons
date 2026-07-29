@@ -5,7 +5,8 @@
   "description": "Dependency-free STIX 2.1 SVG entity icons and semantic support assets.",
   "type": "module",
   "scripts": {
-    "generate": "node tools/generate-support-icons.mjs && node tools/generate-labeled-icons.mjs && node tools/generate-catalog.mjs",
+    "generate": "node tools/generate-support-icons.mjs && node tools/generate-filled-icons.mjs && node tools/generate-labeled-icons.mjs && node tools/generate-catalog.mjs",
+    "generate:filled": "node tools/generate-filled-icons.mjs",
     "generate:freetaxii": "node tools/generate-labeled-icons.mjs && node tools/generate-freetaxii-pngs.mjs",
     "test": "node tools/validate-icons.mjs && node --test tools/resolve-icon.test.mjs && node tools/validate-local-links.mjs"
   },

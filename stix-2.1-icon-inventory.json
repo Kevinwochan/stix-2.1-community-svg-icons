@@ -210,6 +210,27 @@
     { "alias": "custom-object", "target": "custom-object", "path": "icons/fallback/custom-object.svg", "passthrough": true }
   ],
   "presentation_variants": {
+    "filled_icons": {
+      "description": "Compact glyph-only icons with an accessible type-colored circular background for graphs and legends that already render visible labels.",
+      "output_directory": "icons/filled",
+      "view_box": "0 0 64 64",
+      "entity_count": 43,
+      "marking_count": 7,
+      "color_profile": "oasis_visualizer_compatible",
+      "foreground": "#FFFFFF",
+      "marking_background": "#475569",
+      "tlp_background": "#000000",
+      "use_when": [
+        "A graph or legend already provides a visible type label.",
+        "An external image or canvas renderer cannot inherit currentColor.",
+        "Type-level color improves scanning without replacing the icon or label."
+      ],
+      "avoid_when": [
+        "The artwork is the only visible type identifier; use a labeled tile instead.",
+        "A consumer needs portable monochrome currentColor artwork.",
+        "The asset is an extension, state, or property badge composed onto a parent."
+      ]
+    },
     "labeled_tiles": {
       "description": "Filled-background tiles with a persistent visible label for standalone documentation, gallery, and export contexts.",
       "output_directory": "icons/labeled",

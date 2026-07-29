@@ -6,6 +6,7 @@ Generated from `stix-2.1-icon-inventory.json`.
 - Completed canonical entity SVGs: **43**
 - Completed semantic support SVGs: **39**
 - Unique SVG assets: **82**
+- Filled graph and legend variants: **50**
 - Labeled presentation variants: **50**
 - Deterministic PNG exports: **9**
 - Canonical entity coverage: **100%**
@@ -15,9 +16,10 @@ Markings, predefined extensions, extension-defined objects, state indicators,
 fallbacks, and compatibility artwork are reported independently. They do not
 change the canonical count of 43 top-level entity types.
 
-The labeled presentation variants are derived from canonical entity and
-marking artwork. They add filled backgrounds and persistent labels without
-replacing the portable glyph-only source assets.
+The filled and labeled presentation variants are derived from canonical entity
+and marking artwork without replacing the portable glyph-only source assets.
+Filled variants provide compact, type-colored graph and legend treatments;
+labeled variants add persistent labels for artwork used without adjacent text.
 
 ## Canonical top-level entities
 
