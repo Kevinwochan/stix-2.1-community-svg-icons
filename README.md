@@ -66,11 +66,14 @@ apply colors while generating the image resource; an external SVG does not
 inherit `currentColor` from the surrounding page.
 
 TLP badges are the intentional semantic exception to the monochrome contract.
-Their glyphs use the applicable FIRST display colors plus distinct geometric
-letter cues. Consuming interfaces must place the complete uppercase TLP label
-alongside the glyph, so color is never the only cue. STIX 2.1 `TLP:WHITE` is
+Their glyphs use the applicable FIRST display colors as filled STIX marking
+tags, plus distinct path-drawn scope pictograms. Consuming interfaces must
+place the complete uppercase TLP label alongside the glyph, so color is never
+the only cue. STIX 2.1 `TLP:WHITE` is
 preserved as a serialization-compatibility presentation and must not be
 silently rewritten to current TLP 2.0 `TLP:CLEAR`.
+
+[![Colored STIX marking tags for every supported TLP variant](preview/pr-screenshots/tlp-variants.png)](preview/pr-screenshots/tlp-variants.png)
 
 Embedded SVG metadata improves the standalone files, but it is not sufficient
 application accessibility when an icon is loaded as an image or painted on a

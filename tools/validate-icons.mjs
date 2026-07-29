@@ -153,6 +153,25 @@ const officialTlpColors = {
   "tlp-amber-strict": "#FFC000",
 };
 
+const relativeLuminance = (hex) => {
+  const channels = hex.match(/[0-9a-f]{2}/gi)
+    .map((channel) => Number.parseInt(channel, 16) / 255)
+    .map((channel) =>
+      channel <= 0.04045
+        ? channel / 12.92
+        : ((channel + 0.055) / 1.055) ** 2.4
+    );
+  return 0.2126 * channels[0] + 0.7152 * channels[1]
+    + 0.0722 * channels[2];
+};
+
+const contrastRatio = (first, second) => {
+  const firstLuminance = relativeLuminance(first);
+  const secondLuminance = relativeLuminance(second);
+  return (Math.max(firstLuminance, secondLuminance) + 0.05)
+    / (Math.min(firstLuminance, secondLuminance) + 0.05);
+};
+
 const geometryBodies = new Map();
 
 for (const path of [...actualPaths].sort()) {
@@ -214,8 +233,18 @@ for (const path of [...actualPaths].sort()) {
     if (!source.includes(color)) {
       errors.push(`${path}: missing official ${tlpKey} color ${color}`);
     }
-    if (!source.includes('fill="#000000"')) {
-      errors.push(`${path}: missing the required black TLP background`);
+    if (
+      !source.includes('d="M7 16h28l21 16-21 16H7z"')
+      || !source.includes('stroke="#111827"')
+    ) {
+      errors.push(`${path}: missing the colored STIX marking tag treatment`);
+    }
+    const pictogramContrast = contrastRatio("#111827", color);
+    if (pictogramContrast < colorScheme.accessibility.minimum_contrast_ratio) {
+      errors.push(
+        `${path}: ${pictogramContrast.toFixed(2)}:1 pictogram contrast is below `
+        + `${colorScheme.accessibility.minimum_contrast_ratio}:1`,
+      );
     }
   }
 
@@ -313,25 +342,6 @@ for (const path of [...actualLabeledPaths].sort()) {
     errors.push(`${path}: title and aria-label do not match`);
   }
 }
-
-const relativeLuminance = (hex) => {
-  const channels = hex.match(/[0-9a-f]{2}/gi)
-    .map((channel) => Number.parseInt(channel, 16) / 255)
-    .map((channel) =>
-      channel <= 0.04045
-        ? channel / 12.92
-        : ((channel + 0.055) / 1.055) ** 2.4
-    );
-  return 0.2126 * channels[0] + 0.7152 * channels[1]
-    + 0.0722 * channels[2];
-};
-
-const contrastRatio = (first, second) => {
-  const firstLuminance = relativeLuminance(first);
-  const secondLuminance = relativeLuminance(second);
-  return (Math.max(firstLuminance, secondLuminance) + 0.05)
-    / (Math.min(firstLuminance, secondLuminance) + 0.05);
-};
 
 const compatibilityProfile = colorScheme.profiles.oasis_visualizer_compatible;
 const inventoryTypes = new Set(inventory.entities.map((entity) => entity.type));

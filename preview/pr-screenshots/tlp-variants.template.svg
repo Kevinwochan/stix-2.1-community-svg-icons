@@ -5,7 +5,7 @@
     Complete STIX marking coverage
   </text>
   <text x="72" y="112" fill="#59636e" font-family="system-ui, sans-serif" font-size="22">
-    Filled tiles retain a visible label and a distinct glyph, so color is never the only cue.
+    Labeled tiles pair each colored marking tag with a distinct scope pictogram and persistent label.
   </text>
   <g transform="translate(72 152)">
     <g transform="translate(0 0)">

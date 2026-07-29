@@ -119,42 +119,55 @@ const icons = {
 
 const tlp = {
   "icons/marking/tlp-white.svg": {
-    title: "STIX TLP WHITE Marking",
+    title: "STIX TLP WHITE Compatibility Marking",
     color: "#FFFFFF",
-    cue: `<path d="M19 22 23 42 28 29 32 42 37 29 41 42 45 22"/>`,
+    cue: `<path d="m31 27 8-4M31 33l12-6M35 39l8-4"/>`,
   },
   "icons/marking/tlp-green.svg": {
     title: "STIX TLP GREEN Marking",
     color: "#33FF00",
-    cue: `<path d="M43 25a13 13 0 1 0 0 14v-8H33"/>`,
+    cue: `<path d="m33 32 7-6M33 32l7 6"/>
+    <circle cx="31" cy="32" r="3" fill="#111827" stroke="none"/>
+    <circle cx="42" cy="25" r="3" fill="#111827" stroke="none"/>
+    <circle cx="42" cy="39" r="3" fill="#111827" stroke="none"/>`,
   },
   "icons/marking/tlp-amber.svg": {
     title: "STIX TLP AMBER Marking",
     color: "#FFC000",
-    cue: `<path d="m20 43 12-24 12 24M25 34h14"/>`,
+    cue: `<circle cx="36" cy="27" r="3" fill="#111827" stroke="none"/>
+    <circle cx="30" cy="31" r="2.5" fill="#111827" stroke="none"/>
+    <circle cx="42" cy="31" r="2.5" fill="#111827" stroke="none"/>
+    <path d="M30 40c.5-5 2.5-8 6-8s5.5 3 6 8M26 40c.3-3 1.5-5 4-5M46 40c-.3-3-1.5-5-4-5"/>`,
   },
   "icons/marking/tlp-red.svg": {
     title: "STIX TLP RED Marking",
     color: "#FF2B2B",
-    cue: `<path d="M22 44V20h10a8 8 0 0 1 0 16H22M34 36l9 8"/>`,
+    cue: `<rect x="30" y="30" width="14" height="12" rx="2"/>
+    <path d="M33 30v-4a4 4 0 0 1 8 0v4M37 35v3"/>`,
   },
   "icons/marking/tlp-clear.svg": {
-    title: "TLP CLEAR Marking",
+    title: "STIX TLP CLEAR Marking",
     color: "#FFFFFF",
-    cue: `<path d="M43 25a13 13 0 1 0 0 14"/>`,
+    cue: `<circle cx="38" cy="32" r="9"/>
+    <path d="M29 32h18M38 23c3 3 4 15 0 18M38 23c-3 3-4 15 0 18"/>`,
   },
   "icons/marking/tlp-amber-strict.svg": {
-    title: "TLP AMBER STRICT Marking",
+    title: "STIX TLP AMBER STRICT Marking",
     color: "#FFC000",
-    cue: `<path d="m14 43 10-22 10 22M18 35h12M50 25c-2-4-14-4-14 2 0 7 14 3 14 11 0 6-12 7-15 1"/>`,
+    cue: `<path d="M30 41V29l7-5 7 5v12M34 41V30h6v11M28 41h18"/>`,
   },
 };
 
 for (const [path, { title, color, cue }] of Object.entries(tlp)) {
   icons[path] = svg(
     title,
-    `  <rect x="6" y="12" width="52" height="40" rx="6" fill="#000000" stroke="${color}"/>
-  <g stroke="${color}">${cue}</g>`,
+    `  <path d="M7 16h28l21 16-21 16H7z"
+        fill="${color}" stroke="#111827"/>
+  <circle cx="17" cy="32" r="4" fill="#111827" stroke="none"/>
+  <g fill="none" stroke="#111827" stroke-width="3"
+     stroke-linecap="round" stroke-linejoin="round">
+    ${cue}
+  </g>`,
     'fill="none"',
   );
 }

@@ -39,3 +39,39 @@ const embedImages = async (templateName) => {
 
 await embedImages("tlp-variants");
 await embedImages("variant-decision");
+
+const refreshEmbeddedLabeledTiles = async () => {
+  const screenshotPath = resolve(screenshotDir, "docs-examples-impact.svg");
+  let output = await readFile(screenshotPath, "utf8");
+  const assetByLabel = new Map([
+    ["TLP:GREEN", "tlp-green.svg"],
+    ["TLP:AMBER", "tlp-amber.svg"],
+    ["TLP:RED", "tlp-red.svg"],
+  ]);
+  const dataImagePattern =
+    /data:image\/svg\+xml;base64,([A-Za-z0-9+/=]+)/g;
+
+  for (const match of [...output.matchAll(dataImagePattern)]) {
+    const embeddedSource = Buffer.from(match[1], "base64").toString("utf8");
+    const label = embeddedSource.match(/aria-label="(TLP:[^"]+) labeled tile"/)
+      ?.[1];
+    const assetName = assetByLabel.get(label);
+    if (!assetName) continue;
+    const assetPath = resolve(
+      root,
+      "icons",
+      "labeled",
+      "marking",
+      assetName,
+    );
+    const assetSource = await readFile(assetPath, "utf8");
+    const refreshed = `data:image/svg+xml;base64,${
+      Buffer.from(assetSource).toString("base64")
+    }`;
+    output = output.replace(match[0], refreshed);
+  }
+
+  await writeFile(screenshotPath, output);
+};
+
+await refreshEmbeddedLabeledTiles();
