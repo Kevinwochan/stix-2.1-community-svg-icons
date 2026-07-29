@@ -132,6 +132,5 @@ command on pushes and pull requests.
 
 ## Upstream contributions
 
-See [`PR_PLAN.md`](PR_PLAN.md) for the proposed pull request sequence,
-repository-specific scope, application-level accessibility checks, licensing
-boundaries, validation gates, and related upstream issues.
+See [`UPSTREAM.md`](UPSTREAM.md) for the visualizer, documentation, graphics,
+and gallery integrations.

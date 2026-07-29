@@ -26,7 +26,7 @@ const checkTarget = async (sourcePath, target) => {
   }
 };
 
-for (const relativePath of ["README.md", "COVERAGE.md", "PR_PLAN.md"]) {
+for (const relativePath of ["README.md", "COVERAGE.md", "UPSTREAM.md"]) {
   const path = join(projectRoot, relativePath);
   const source = await readFile(path, "utf8");
   const targets = [...source.matchAll(/\[[^\]]*]\(([^)]+)\)/g)]
