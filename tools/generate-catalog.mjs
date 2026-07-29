@@ -539,6 +539,8 @@ Generated from \`stix-2.1-icon-inventory.json\`.
   ...icons.map((icon) => icon.relativePath),
   ...supportIcons.map((icon) => icon.path),
 ]).size}**
+- Labeled presentation variants: **${inventory.presentation_variants.labeled_tiles.entity_count
+    + inventory.presentation_variants.labeled_tiles.marking_count}**
 - Deterministic PNG exports: **${exportProfile.types.length}**
 - Canonical entity coverage: **100%**
 - Category split: ${categoryCounts.map(([name, count]) => `${name} ${count}`).join(", ")}
@@ -546,6 +548,10 @@ Generated from \`stix-2.1-icon-inventory.json\`.
 Markings, predefined extensions, extension-defined objects, state indicators,
 fallbacks, and compatibility artwork are reported independently. They do not
 change the canonical count of 43 top-level entity types.
+
+The labeled presentation variants are derived from canonical entity and
+marking artwork. They add filled backgrounds and persistent labels without
+replacing the portable glyph-only source assets.
 
 ## Canonical top-level entities
 

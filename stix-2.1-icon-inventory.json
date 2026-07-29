@@ -209,6 +209,25 @@
     { "alias": "victim-target", "target": null, "path": "icons/legacy/victim-target.svg", "passthrough": false },
     { "alias": "custom-object", "target": "custom-object", "path": "icons/fallback/custom-object.svg", "passthrough": true }
   ],
+  "presentation_variants": {
+    "labeled_tiles": {
+      "description": "Filled-background tiles with a persistent visible label for standalone documentation, gallery, and export contexts.",
+      "output_directory": "icons/labeled",
+      "view_box": "0 0 96 96",
+      "entity_count": 43,
+      "marking_count": 7,
+      "use_when": [
+        "The artwork is the only visible type identifier.",
+        "A documentation diagram or selector grid has no adjacent type label.",
+        "A gallery or downloaded image must remain identifiable out of context."
+      ],
+      "avoid_when": [
+        "The application already renders the type label beneath the icon.",
+        "A legend or table already provides adjacent visible type text.",
+        "The asset is an extension, state, or property badge composed onto a parent."
+      ]
+    }
+  },
   "required_fallback_icons": [
     "custom-sdo",
     "custom-sco",
@@ -231,7 +250,7 @@
         "windows-registry-key",
         "x509-certificate"
       ],
-      "source_directory": "icons/sco",
+      "source_directory": "icons/labeled/sco",
       "output_directory": "exports/freetaxii-300dpi",
       "width": 1200,
       "height": 1200,

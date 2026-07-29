@@ -77,6 +77,22 @@ application accessibility when an icon is loaded as an image or painted on a
 canvas. Consuming applications must expose an accessible node, legend, or
 badge name independently of the SVG `<title>` and `aria-label`.
 
+## Labeled presentation tiles
+
+The optional `icons/labeled/` variants place each standalone entity or marking
+on a filled background with a persistent visible label underneath. Use them
+when the artwork is the only visible type identifier, such as documentation
+diagrams, selector grids, download galleries, and exported images.
+Their labels use deterministic vector paths rather than fonts, so the SVGs
+remain self-contained and the PNG exports reproduce consistently.
+
+Keep the glyph-only assets when an application already prints the object type
+beneath a graph node or beside a legend icon. Extension and state badges also
+remain glyph-only because they decorate a labeled parent rather than replace
+its identity.
+
+[![Catalog of labeled STIX 2.1 entity tiles](preview/catalog-labeled.png)](preview/catalog-labeled.png)
+
 ## Resolution model
 
 A consuming application should resolve the visual treatment from semantics,
@@ -98,6 +114,7 @@ as a File while still communicating its extension.
 ## Preview and validation
 
 Open `preview/catalog.svg` to inspect the entity set,
+`preview/catalog-labeled.svg` for filled and persistently labeled tiles,
 `preview/catalog-small.svg` for 24/32 px tests, and
 `preview/color-scheme.svg` for the light/dark compatibility theme. Use
 `preview/support-catalog.svg` for marking variants, extension badges,
@@ -110,13 +127,13 @@ The nine reproducible PNG exports requested by FreeTAXII issue #4 are in
 300-dpi PNG resolution metadata. Regenerate them with:
 
 ```sh
-node tools/generate-freetaxii-pngs.mjs
+npm run generate:freetaxii
 ```
 
-Regenerate the catalog and coverage report with:
+Regenerate the icons, catalogs, and coverage report with:
 
 ```sh
-node tools/generate-catalog.mjs
+npm run generate
 ```
 
 Validate the complete inventory with:

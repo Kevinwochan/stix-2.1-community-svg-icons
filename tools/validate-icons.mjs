@@ -25,6 +25,26 @@ const assetGroups = {
 const expectedPaths = new Set(
   Object.values(assetGroups).flat().map((entry) => entry.path),
 );
+const labeledVariant = inventory.presentation_variants.labeled_tiles;
+const labeledCategoryDirectory = {
+  SDO: "sdo",
+  SCO: "sco",
+  SRO: "sro",
+  SMO: "smo",
+  Bundle: "bundle",
+};
+const expectedLabeledPaths = new Set([
+  ...inventory.entities.map((entry) =>
+    `${labeledVariant.output_directory}/`
+    + `${labeledCategoryDirectory[entry.category]}/${entry.type}.svg`
+  ),
+  ...[
+    ...inventory.marking_variants,
+    ...inventory.modern_tlp_variants,
+  ].map((entry) =>
+    `${labeledVariant.output_directory}/marking/${entry.key}.svg`
+  ),
+]);
 
 const findSvgPaths = async (directory) => {
   const paths = [];
@@ -39,7 +59,17 @@ const findSvgPaths = async (directory) => {
   return paths;
 };
 
-const actualPaths = new Set(await findSvgPaths(join(projectRoot, "icons")));
+const allSvgPaths = await findSvgPaths(join(projectRoot, "icons"));
+const actualPaths = new Set(
+  allSvgPaths.filter((path) =>
+    !path.startsWith(`${labeledVariant.output_directory}/`)
+  ),
+);
+const actualLabeledPaths = new Set(
+  allSvgPaths.filter((path) =>
+    path.startsWith(`${labeledVariant.output_directory}/`)
+  ),
+);
 const errors = [];
 
 for (const path of expectedPaths) {
@@ -48,6 +78,26 @@ for (const path of expectedPaths) {
 
 for (const path of actualPaths) {
   if (!expectedPaths.has(path)) errors.push(`Unexpected icon: ${path}`);
+}
+
+for (const path of expectedLabeledPaths) {
+  if (!actualLabeledPaths.has(path)) {
+    errors.push(`Missing labeled tile: ${path}`);
+  }
+}
+
+for (const path of actualLabeledPaths) {
+  if (!expectedLabeledPaths.has(path)) {
+    errors.push(`Unexpected labeled tile: ${path}`);
+  }
+}
+
+if (
+  inventory.entities.length !== labeledVariant.entity_count
+  || inventory.marking_variants.length
+    + inventory.modern_tlp_variants.length !== labeledVariant.marking_count
+) {
+  errors.push("Labeled tile inventory counts do not match their source groups");
 }
 
 const tlpPaths = new Map(
@@ -144,6 +194,42 @@ for (const path of [...actualPaths].sort()) {
     errors.push(`${path}: duplicates geometry from ${geometryBodies.get(body)}`);
   } else {
     geometryBodies.set(body, path);
+  }
+}
+
+for (const path of [...actualLabeledPaths].sort()) {
+  const source = await readFile(join(projectRoot, path), "utf8");
+  const requiredPatterns = [
+    ["an SVG root element", /^<svg\s/],
+    ["the labeled tile viewBox", /viewBox="0 0 96 96"/],
+    ["an accessible image role", /role="img"/],
+    ["an aria-label", /aria-label="[^"]+ labeled tile"/],
+    ["a matching accessible title", /<title>[^<]+ labeled tile<\/title>/],
+    ["a filled tile background", /<rect[^>]+fill="#[0-9A-F]{6}"/s],
+    ["a persistent path-drawn label", /<path data-label="[^"]+"/],
+  ];
+  for (const [description, pattern] of requiredPatterns) {
+    if (!pattern.test(source)) {
+      errors.push(`${path}: missing ${description}`);
+    }
+  }
+  const forbiddenPatterns = [
+    ["scripts", /<script\b/i],
+    ["embedded or external images", /<image\b/i],
+    ["foreign objects", /<foreignObject\b/i],
+    ["external references", /\b(?:href|xlink:href)=/i],
+    ["URL references", /url\s*\(/i],
+    ["font dependencies", /<text\b|font-family\s*=/i],
+  ];
+  for (const [description, pattern] of forbiddenPatterns) {
+    if (pattern.test(source)) {
+      errors.push(`${path}: contains ${description}`);
+    }
+  }
+  const title = source.match(/<title>([^<]+)<\/title>/)?.[1];
+  const ariaLabel = source.match(/aria-label="([^"]+)"/)?.[1];
+  if (title && ariaLabel && title !== ariaLabel) {
+    errors.push(`${path}: title and aria-label do not match`);
   }
 }
 
@@ -293,6 +379,7 @@ if (errors.length > 0) {
     .join(", ");
   process.stdout.write(
     `Validated ${actualPaths.size} unique, dependency-free SVG assets `
+    + `and ${actualLabeledPaths.size} labeled presentation tiles `
     + `(${summary}); entity theme colors exceed `
     + `${colorScheme.accessibility.minimum_contrast_ratio}:1 contrast; `
     + `${exportProfile?.types.length ?? 0} PNG exports passed dimension and `
