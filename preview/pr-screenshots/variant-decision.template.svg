@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="660" viewBox="0 0 1440 660">
+  <title>When to use labeled and glyph-only STIX icons</title>
+  <rect width="1440" height="660" fill="#f6f8fa"/>
+  <text x="72" y="72" fill="#1f2328" font-family="system-ui, sans-serif" font-size="36" font-weight="700">
+    One icon system, treatments matched to context
+  </text>
+  <text x="72" y="112" fill="#59636e" font-family="system-ui, sans-serif" font-size="22">
+    Persistent labels identify standalone artwork; native application text prevents duplication in interactive views.
+  </text>
+
+  <g transform="translate(72 154)">
+    <rect width="400" height="430" rx="24" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
+    <text x="32" y="48" fill="#1f2328" font-family="system-ui, sans-serif" font-size="25" font-weight="700">Standalone tile</text>
+    <text x="32" y="82" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">Documentation, downloads, selectors</text>
+    <image href="../../icons/labeled/sdo/indicator.svg" x="106" y="112" width="188" height="188"/>
+    <rect x="30" y="334" width="340" height="62" rx="12" fill="#ddf4ff"/>
+    <text x="200" y="360" text-anchor="middle" fill="#0969da" font-family="system-ui, sans-serif" font-size="18" font-weight="700">FILLED + LABELED</text>
+    <text x="200" y="383" text-anchor="middle" fill="#57606a" font-family="system-ui, sans-serif" font-size="15">The artwork identifies itself</text>
+  </g>
+
+  <g transform="translate(520 154)">
+    <rect width="400" height="430" rx="24" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
+    <text x="32" y="48" fill="#1f2328" font-family="system-ui, sans-serif" font-size="25" font-weight="700">Interactive graph</text>
+    <text x="32" y="82" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">Native node and legend labels</text>
+    <image href="../../icons/filled/sdo/indicator.svg" x="108" y="103" width="184" height="184"/>
+    <text x="200" y="316" text-anchor="middle" fill="#1f2328" font-family="system-ui, sans-serif" font-size="24" font-weight="600">Malicious URL indicator</text>
+    <rect x="30" y="334" width="340" height="62" rx="12" fill="#dafbe1"/>
+    <text x="200" y="360" text-anchor="middle" fill="#1a7f37" font-family="system-ui, sans-serif" font-size="18" font-weight="700">FILLED GLYPH</text>
+    <text x="200" y="383" text-anchor="middle" fill="#57606a" font-family="system-ui, sans-serif" font-size="15">The application supplies the label</text>
+  </g>
+
+  <g transform="translate(968 154)">
+    <rect width="400" height="430" rx="24" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
+    <text x="32" y="48" fill="#1f2328" font-family="system-ui, sans-serif" font-size="25" font-weight="700">Composed state</text>
+    <text x="32" y="82" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">Extension and property overlays</text>
+    <image href="../../icons/filled/sco/file.svg" x="108" y="103" width="184" height="184"/>
+    <circle cx="270" cy="257" r="38" fill="#fff" stroke="#1f2328" stroke-width="2"/>
+    <image href="../../icons/badge/archive-ext.svg" x="244" y="231" width="52" height="52"/>
+    <text x="200" y="316" text-anchor="middle" fill="#1f2328" font-family="system-ui, sans-serif" font-size="24" font-weight="600">File + archive extension</text>
+    <rect x="30" y="334" width="340" height="62" rx="12" fill="#fff8c5"/>
+    <text x="200" y="360" text-anchor="middle" fill="#9a6700" font-family="system-ui, sans-serif" font-size="18" font-weight="700">GLYPH-ONLY BADGE</text>
+    <text x="200" y="383" text-anchor="middle" fill="#57606a" font-family="system-ui, sans-serif" font-size="15">The badge decorates a named parent</text>
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="660" viewBox="0 0 1440 660">
+  <title>When to use labeled and glyph-only STIX icons</title>
+  <rect width="1440" height="660" fill="#f6f8fa"/>
+  <text x="72" y="72" fill="#1f2328" font-family="system-ui, sans-serif" font-size="36" font-weight="700">
+    One icon system, treatments matched to context
+  </text>
+  <text x="72" y="112" fill="#59636e" font-family="system-ui, sans-serif" font-size="22">
+    Persistent labels identify standalone artwork; native application text prevents duplication in interactive views.
+  </text>
+
+  <g transform="translate(72 154)">
+    <rect width="400" height="430" rx="24" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
+    <text x="32" y="48" fill="#1f2328" font-family="system-ui, sans-serif" font-size="25" font-weight="700">Standalone tile</text>
+    <text x="32" y="82" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">Documentation, downloads, selectors</text>
+    <svg x="106" y="112" width="188" height="188" viewBox="0 0 96 96" >
+  <title>STIX Indicator labeled tile</title>
+  <rect x="1" y="1" width="94" height="94" rx="15"
+        fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="4" y="4" width="88" height="66" rx="12"
+        fill="#2949B8"/>
+  <g transform="translate(20 8) scale(.875)"
+       fill="none" stroke="#FFFFFF" color="#FFFFFF"
+       stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="28" cy="27" r="15"/>
+  <path d="m39 38 14 14M18 29h5l3-7 5 13 3-6h5"/>
+  </g>
+  <path data-label="Indicator" fill="#152033"
+        stroke="none" d="M13.575 78.775h1.350v1.350h-1.350zM14.925 78.775h1.350v1.350h-1.350zM16.275 78.775h1.350v1.350h-1.350zM14.925 80.125h1.350v1.350h-1.350zM14.925 81.475h1.350v1.350h-1.350zM14.925 82.825h1.350v1.350h-1.350zM14.925 84.175h1.350v1.350h-1.350zM14.925 85.525h1.350v1.350h-1.350zM13.575 86.875h1.350v1.350h-1.350zM14.925 86.875h1.350v1.350h-1.350zM16.275 86.875h1.350v1.350h-1.350zM20.325 78.775h1.350v1.350h-1.350zM25.725 78.775h1.350v1.350h-1.350zM20.325 80.125h1.350v1.350h-1.350zM21.675 80.125h1.350v1.350h-1.350zM25.725 80.125h1.350v1.350h-1.350zM20.325 81.475h1.350v1.350h-1.350zM23.025 81.475h1.350v1.350h-1.350zM25.725 81.475h1.350v1.350h-1.350zM20.325 82.825h1.350v1.350h-1.350zM24.375 82.825h1.350v1.350h-1.350zM25.725 82.825h1.350v1.350h-1.350zM20.325 84.175h1.350v1.350h-1.350zM25.725 84.175h1.350v1.350h-1.350zM20.325 85.525h1.350v1.350h-1.350zM25.725 85.525h1.350v1.350h-1.350zM20.325 86.875h1.350v1.350h-1.350zM25.725 86.875h1.350v1.350h-1.350zM28.425 78.775h1.350v1.350h-1.350zM29.775 78.775h1.350v1.350h-1.350zM31.125 78.775h1.350v1.350h-1.350zM32.475 78.775h1.350v1.350h-1.350zM28.425 80.125h1.350v1.350h-1.350zM33.825 80.125h1.350v1.350h-1.350zM28.425 81.475h1.350v1.350h-1.350zM33.825 81.475h1.350v1.350h-1.350zM28.425 82.825h1.350v1.350h-1.350zM33.825 82.825h1.350v1.350h-1.350zM28.425 84.175h1.350v1.350h-1.350zM33.825 84.175h1.350v1.350h-1.350zM28.425 85.525h1.350v1.350h-1.350zM33.825 85.525h1.350v1.350h-1.350zM28.425 86.875h1.350v1.350h-1.350zM29.775 86.875h1.350v1.350h-1.350zM31.125 86.875h1.350v1.350h-1.350zM32.475 86.875h1.350v1.350h-1.350zM37.875 78.775h1.350v1.350h-1.350zM39.225 78.775h1.350v1.350h-1.350zM40.575 78.775h1.350v1.350h-1.350zM39.225 80.125h1.350v1.350h-1.350zM39.225 81.475h1.350v1.350h-1.350zM39.225 82.825h1.350v1.350h-1.350zM39.225 84.175h1.350v1.350h-1.350zM39.225 85.525h1.350v1.350h-1.350zM37.875 86.875h1.350v1.350h-1.350zM39.225 86.875h1.350v1.350h-1.350zM40.575 86.875h1.350v1.350h-1.350zM45.975 78.775h1.350v1.350h-1.350zM47.325 78.775h1.350v1.350h-1.350zM48.675 78.775h1.350v1.350h-1.350zM50.025 78.775h1.350v1.350h-1.350zM44.625 80.125h1.350v1.350h-1.350zM44.625 81.475h1.350v1.350h-1.350zM44.625 82.825h1.350v1.350h-1.350zM44.625 84.175h1.350v1.350h-1.350zM44.625 85.525h1.350v1.350h-1.350zM45.975 86.875h1.350v1.350h-1.350zM47.325 86.875h1.350v1.350h-1.350zM48.675 86.875h1.350v1.350h-1.350zM50.025 86.875h1.350v1.350h-1.350zM54.075 78.775h1.350v1.350h-1.350zM55.425 78.775h1.350v1.350h-1.350zM56.775 78.775h1.350v1.350h-1.350zM52.725 80.125h1.350v1.350h-1.350zM58.125 80.125h1.350v1.350h-1.350zM52.725 81.475h1.350v1.350h-1.350zM58.125 81.475h1.350v1.350h-1.350zM52.725 82.825h1.350v1.350h-1.350zM54.075 82.825h1.350v1.350h-1.350zM55.425 82.825h1.350v1.350h-1.350zM56.775 82.825h1.350v1.350h-1.350zM58.125 82.825h1.350v1.350h-1.350zM52.725 84.175h1.350v1.350h-1.350zM58.125 84.175h1.350v1.350h-1.350zM52.725 85.525h1.350v1.350h-1.350zM58.125 85.525h1.350v1.350h-1.350zM52.725 86.875h1.350v1.350h-1.350zM58.125 86.875h1.350v1.350h-1.350zM60.825 78.775h1.350v1.350h-1.350zM62.175 78.775h1.350v1.350h-1.350zM63.525 78.775h1.350v1.350h-1.350zM64.875 78.775h1.350v1.350h-1.350zM66.225 78.775h1.350v1.350h-1.350zM63.525 80.125h1.350v1.350h-1.350zM63.525 81.475h1.350v1.350h-1.350zM63.525 82.825h1.350v1.350h-1.350zM63.525 84.175h1.350v1.350h-1.350zM63.525 85.525h1.350v1.350h-1.350zM63.525 86.875h1.350v1.350h-1.350zM70.275 78.775h1.350v1.350h-1.350zM71.625 78.775h1.350v1.350h-1.350zM72.975 78.775h1.350v1.350h-1.350zM68.925 80.125h1.350v1.350h-1.350zM74.325 80.125h1.350v1.350h-1.350zM68.925 81.475h1.350v1.350h-1.350zM74.325 81.475h1.350v1.350h-1.350zM68.925 82.825h1.350v1.350h-1.350zM74.325 82.825h1.350v1.350h-1.350zM68.925 84.175h1.350v1.350h-1.350zM74.325 84.175h1.350v1.350h-1.350zM68.925 85.525h1.350v1.350h-1.350zM74.325 85.525h1.350v1.350h-1.350zM70.275 86.875h1.350v1.350h-1.350zM71.625 86.875h1.350v1.350h-1.350zM72.975 86.875h1.350v1.350h-1.350zM77.025 78.775h1.350v1.350h-1.350zM78.375 78.775h1.350v1.350h-1.350zM79.725 78.775h1.350v1.350h-1.350zM81.075 78.775h1.350v1.350h-1.350zM77.025 80.125h1.350v1.350h-1.350zM82.425 80.125h1.350v1.350h-1.350zM77.025 81.475h1.350v1.350h-1.350zM82.425 81.475h1.350v1.350h-1.350zM77.025 82.825h1.350v1.350h-1.350zM78.375 82.825h1.350v1.350h-1.350zM79.725 82.825h1.350v1.350h-1.350zM81.075 82.825h1.350v1.350h-1.350zM77.025 84.175h1.350v1.350h-1.350zM79.725 84.175h1.350v1.350h-1.350zM77.025 85.525h1.350v1.350h-1.350zM81.075 85.525h1.350v1.350h-1.350zM77.025 86.875h1.350v1.350h-1.350zM82.425 86.875h1.350v1.350h-1.350z"/>
+</svg>
+    <rect x="30" y="334" width="340" height="62" rx="12" fill="#ddf4ff"/>
+    <text x="200" y="360" text-anchor="middle" fill="#0969da" font-family="system-ui, sans-serif" font-size="18" font-weight="700">FILLED + LABELED</text>
+    <text x="200" y="383" text-anchor="middle" fill="#57606a" font-family="system-ui, sans-serif" font-size="15">The artwork identifies itself</text>
+  </g>
+
+  <g transform="translate(520 154)">
+    <rect width="400" height="430" rx="24" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
+    <text x="32" y="48" fill="#1f2328" font-family="system-ui, sans-serif" font-size="25" font-weight="700">Interactive graph</text>
+    <text x="32" y="82" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">Native node and legend labels</text>
+    <svg x="108" y="103" width="184" height="184" viewBox="0 0 64 64" fill="none"
+     stroke="#FFFFFF"
+     color="#FFFFFF"
+     stroke-width="3"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+  <title>STIX Indicator filled icon</title>
+  <circle cx="32" cy="32" r="31" fill="#2949B8" stroke="none"/>
+  <circle cx="28" cy="27" r="15"/>
+  <path d="m39 38 14 14M18 29h5l3-7 5 13 3-6h5"/>
+</svg>
+    <text x="200" y="316" text-anchor="middle" fill="#1f2328" font-family="system-ui, sans-serif" font-size="24" font-weight="600">Malicious URL indicator</text>
+    <rect x="30" y="334" width="340" height="62" rx="12" fill="#dafbe1"/>
+    <text x="200" y="360" text-anchor="middle" fill="#1a7f37" font-family="system-ui, sans-serif" font-size="18" font-weight="700">FILLED GLYPH</text>
+    <text x="200" y="383" text-anchor="middle" fill="#57606a" font-family="system-ui, sans-serif" font-size="15">The application supplies the label</text>
+  </g>
+
+  <g transform="translate(968 154)">
+    <rect width="400" height="430" rx="24" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
+    <text x="32" y="48" fill="#1f2328" font-family="system-ui, sans-serif" font-size="25" font-weight="700">Composed state</text>
+    <text x="32" y="82" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">Extension and property overlays</text>
+    <svg x="108" y="103" width="184" height="184" viewBox="0 0 64 64" fill="none"
+     stroke="#FFFFFF"
+     color="#FFFFFF"
+     stroke-width="3"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+  <title>STIX File filled icon</title>
+  <circle cx="32" cy="32" r="31" fill="#374151" stroke="none"/>
+  <path d="M17 8h20l11 11v37H17z"/>
+  <path d="M37 8v11h11"/>
+  <path d="M24 30h17M24 38h17M24 46h10"/>
+  <circle cx="40" cy="46" r="1.5" fill="#FFFFFF" stroke="none"/>
+</svg>
+    <circle cx="270" cy="257" r="38" fill="#fff" stroke="#1f2328" stroke-width="2"/>
+    <svg x="244" y="231" width="52" height="52" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+     stroke-width="3"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+  <title>STIX Archive File Extension</title>
+  <rect x="10" y="14" width="44" height="11" rx="3"/>
+  <path d="M14 25v25h36V25M25 34h14M27 42h10"/>
+</svg>
+    <text x="200" y="316" text-anchor="middle" fill="#1f2328" font-family="system-ui, sans-serif" font-size="24" font-weight="600">File + archive extension</text>
+    <rect x="30" y="334" width="340" height="62" rx="12" fill="#fff8c5"/>
+    <text x="200" y="360" text-anchor="middle" fill="#9a6700" font-family="system-ui, sans-serif" font-size="18" font-weight="700">GLYPH-ONLY BADGE</text>
+    <text x="200" y="383" text-anchor="middle" fill="#57606a" font-family="system-ui, sans-serif" font-size="15">The badge decorates a named parent</text>
+  </g>
+</svg>

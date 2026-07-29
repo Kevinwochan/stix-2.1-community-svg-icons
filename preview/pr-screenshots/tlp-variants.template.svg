@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="420" viewBox="0 0 1680 420">
+  <title>STIX marking presentation variants</title>
+  <rect width="1680" height="420" fill="#f6f8fa"/>
+  <text x="72" y="72" fill="#1f2328" font-family="system-ui, sans-serif" font-size="36" font-weight="700">
+    Complete STIX marking coverage
+  </text>
+  <text x="72" y="112" fill="#59636e" font-family="system-ui, sans-serif" font-size="22">
+    Filled tiles retain a visible label and a distinct glyph, so color is never the only cue.
+  </text>
+  <g transform="translate(72 152)">
+    <g transform="translate(0 0)">
+      <rect width="192" height="192" rx="18" fill="#fff" stroke="#d0d7de"/>
+      <image href="../../icons/labeled/marking/tlp-white.svg" x="32" y="22" width="128" height="128"/>
+      <text x="96" y="174" text-anchor="middle" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">STIX 2.1 compatibility</text>
+    </g>
+    <g transform="translate(216 0)">
+      <rect width="192" height="192" rx="18" fill="#fff" stroke="#d0d7de"/>
+      <image href="../../icons/labeled/marking/tlp-clear.svg" x="32" y="22" width="128" height="128"/>
+      <text x="96" y="174" text-anchor="middle" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">TLP 2.0</text>
+    </g>
+    <g transform="translate(432 0)">
+      <rect width="192" height="192" rx="18" fill="#fff" stroke="#d0d7de"/>
+      <image href="../../icons/labeled/marking/tlp-green.svg" x="32" y="22" width="128" height="128"/>
+      <text x="96" y="174" text-anchor="middle" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">TLP 2.0</text>
+    </g>
+    <g transform="translate(648 0)">
+      <rect width="192" height="192" rx="18" fill="#fff" stroke="#d0d7de"/>
+      <image href="../../icons/labeled/marking/tlp-amber.svg" x="32" y="22" width="128" height="128"/>
+      <text x="96" y="174" text-anchor="middle" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">TLP 2.0</text>
+    </g>
+    <g transform="translate(864 0)">
+      <rect width="192" height="192" rx="18" fill="#fff" stroke="#d0d7de"/>
+      <image href="../../icons/labeled/marking/tlp-amber-strict.svg" x="32" y="22" width="128" height="128"/>
+      <text x="96" y="174" text-anchor="middle" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">TLP 2.0</text>
+    </g>
+    <g transform="translate(1080 0)">
+      <rect width="192" height="192" rx="18" fill="#fff" stroke="#d0d7de"/>
+      <image href="../../icons/labeled/marking/tlp-red.svg" x="32" y="22" width="128" height="128"/>
+      <text x="96" y="174" text-anchor="middle" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">TLP 2.0</text>
+    </g>
+    <g transform="translate(1296 0)">
+      <rect width="192" height="192" rx="18" fill="#fff" stroke="#d0d7de"/>
+      <image href="../../icons/labeled/marking/statement-marking.svg" x="32" y="22" width="128" height="128"/>
+      <text x="96" y="174" text-anchor="middle" fill="#59636e" font-family="system-ui, sans-serif" font-size="18">STIX marking</text>
+    </g>
+  </g>
+</svg>
