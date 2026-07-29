@@ -455,9 +455,13 @@ OASIS submission remains gated separately by its Individual CLA:
 - FreeTAXII gallery PR: draft
   <https://github.com/freetaxii/freetaxii.github.io/pull/2>; GitHub reports it
   mergeable with a clean merge state.
-- OASIS visualizer and documentation PRs: deliberately not opened because the
-  OASIS Individual CLA must be signed before formal contribution. Both
-  fully reviewed branches are published on the contributor forks.
+- OASIS visualizer PR: draft
+  <https://github.com/oasis-open/cti-stix-visualization/pull/68>.
+- OASIS documentation PR: draft
+  <https://github.com/oasis-open/cti-documentation/pull/140>.
+- The OASIS Individual CLA has been signed, but CLA Assistant still reports
+  both repository checks as pending after an explicit recheck. Upstream CI and
+  the CLA status remain the final external gates.
 - Documentation Jekyll build: not completed locally because the repository's
   unconstrained dependency resolution requires a newer Ruby than the host.
   The icon/reference audit is wired into the existing GitHub Actions workflow,
