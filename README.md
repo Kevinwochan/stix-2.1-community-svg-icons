@@ -2,6 +2,40 @@
 
 An original, vector-native icon and badge family for STIX 2.1 applications.
 
+## Install from npm
+
+```sh
+npm install stix-2.1-community-svg-icons@beta
+```
+
+Resolve a STIX object and address its packaged SVG from Node.js:
+
+```js
+import {
+  getIconUrl,
+  resolveIcon,
+} from "stix-2.1-community-svg-icons";
+
+const { primary, badges, states } = resolveIcon({
+  type: "indicator",
+  revoked: true,
+});
+
+console.log(primary.path);       // icons/sdo/indicator.svg
+console.log(getIconUrl(primary)); // file: URL for the installed SVG
+```
+
+The package also exposes:
+
+- `stix-2.1-community-svg-icons/icons/*` for direct SVG asset imports
+- `stix-2.1-community-svg-icons/inventory.json`
+- `stix-2.1-community-svg-icons/colors.css`
+- `stix-2.1-community-svg-icons/colors.json`
+- `stix-2.1-community-svg-icons/resolver`
+
+Browser bundlers can import an exported SVG path using their normal asset or
+URL loader. The root resolver uses Node.js to load its packaged inventory.
+
 ## Demo
 
 [![Catalog of all 43 canonical STIX 2.1 SVG entity icons](preview/catalog.png)](preview/catalog.png)

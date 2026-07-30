@@ -1,14 +1,69 @@
 {
   "name": "stix-2.1-community-svg-icons",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.0-beta.1",
   "description": "Dependency-free STIX 2.1 SVG entity icons and semantic support assets.",
   "type": "module",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs"
+    },
+    "./resolver": {
+      "types": "./tools/resolve-icon.d.mts",
+      "import": "./tools/resolve-icon.mjs"
+    },
+    "./inventory.json": "./stix-2.1-icon-inventory.json",
+    "./colors.css": "./design/color-scheme.css",
+    "./colors.json": "./design/color-scheme.json",
+    "./icons/*": "./icons/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "icons/",
+    "design/color-scheme.css",
+    "design/color-scheme.json",
+    "stix-2.1-icon-inventory.json",
+    "tools/resolve-icon.mjs",
+    "tools/resolve-icon.d.mts",
+    "index.mjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "./design/color-scheme.css"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevinwochan/stix-2.1-community-svg-icons.git"
+  },
+  "homepage": "https://github.com/Kevinwochan/stix-2.1-community-svg-icons#readme",
+  "bugs": {
+    "url": "https://github.com/Kevinwochan/stix-2.1-community-svg-icons/issues"
+  },
+  "keywords": [
+    "stix",
+    "stix2",
+    "cyber-threat-intelligence",
+    "threat-intelligence",
+    "svg",
+    "icons",
+    "tlp"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "beta"
+  },
   "scripts": {
     "generate": "node tools/generate-support-icons.mjs && node tools/generate-filled-icons.mjs && node tools/generate-labeled-icons.mjs && node tools/generate-catalog.mjs",
     "generate:filled": "node tools/generate-filled-icons.mjs",
     "generate:freetaxii": "node tools/generate-labeled-icons.mjs && node tools/generate-freetaxii-pngs.mjs",
-    "test": "node tools/validate-icons.mjs && node --test tools/resolve-icon.test.mjs && node tools/validate-local-links.mjs"
+    "test": "node tools/validate-icons.mjs && node --test tools/resolve-icon.test.mjs tools/package-api.test.mjs && node tools/validate-local-links.mjs",
+    "prepack": "npm test"
   },
   "license": "BSD-3-Clause"
 }
